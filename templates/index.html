@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quark 2017 - Shifting Paradigms</title>
+</head>
+<body>
+Quark 2017 is going to be great event.
+<a href="{% url 'auth_login' %}">Login</a>
+{% if user.is_authenticated %}
+<a href="{% url 'auth_logout' %}">Logout </a>
+{% endif %}
+</body>
+</html>

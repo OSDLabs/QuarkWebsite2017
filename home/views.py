@@ -5,15 +5,18 @@ from django.shortcuts import render
 def home(request):
 	if request.user.is_authenticated():
 		username= request.user.username
-	
-	context = {
+		context = {
 		"username" : username,
-	}
+		}
 
+	context = {}
+
+	
+	
 	return render(request,"index.html",context)
 
-@login_required
-def Profile(request):
-	if request.user.is_authenticated():
-		if not request.use.is_staff():
-			
+# @login_required
+# def Profile(request):
+# 	if request.user.is_authenticated():
+# 		if not request.use.is_staff():
+# 			

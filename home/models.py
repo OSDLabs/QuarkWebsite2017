@@ -12,7 +12,7 @@ class Profile(models.Model):
 	institute = models.CharField(max_length = 120)
 	gender = models.CharField(max_length = 1)
 	dob = models.DateField()
-	year = models.CharField()
+	year = models.DateField(max_length =2)
 
 	def __str__(self):
 		return self.full_name

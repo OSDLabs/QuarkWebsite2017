@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'registration',
     'django.contrib.auth',
+    'home',
 )
 
 MIDDLEWARE_CLASSES = (
