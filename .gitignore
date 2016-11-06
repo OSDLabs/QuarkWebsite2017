@@ -1,0 +1,4 @@
+db.sqlite3
+passw.py
+*pycache*
+*migrations*

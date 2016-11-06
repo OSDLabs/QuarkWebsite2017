@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/bar.css" />
+        
+
+
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<title>Quark 2017 - Shifting Paradigms</title>
+<script src="https://use.fontawesome.com/1a7fce54c7.js"></script>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/pace.min.js"></script>
+
+
+
+
+</head>
+<body>
+
+
+<div class="container demo-3">
+<div class="content">
+<div id="large-header" class="large-header">
+<canvas id="demo-canvas"></canvas>
+<div class="imgs">
+	<img class = "bits"src="bits.png" alt="bitslogo">
+	<!-- <p class = "bitskk">presents</p> -->
+	<img class = "logo"src="quark.png" alt="quarklogo">
+	<img class = "logotext"src="quark_logo.png" alt="quarklogo">
+</div>
+<div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">x</span>
+    <h3 id = "headtext"></h3>
+    <br>
+    <p id="modaltextp1"></p>
+    <br>
+    <p id="modaltextp2"></p>
+    <br>
+    <p id="modaltextp3"></p>
+    <br>
+    <p id="modaltextp4"></p>
+  </div>
+
+</div>
+<table class = "nav">
+<tr>
+	<td id="btn1" class = "menu"><a href="about.html"><i class="fa fa-globe fa-2x" aria-hidden="true"></i><h4>About Us</h4></a></td>
+	<td id="btn2" class = "menu"><i class="fa fa-flag-checkered fa-2x" aria-hidden="true"></i><h4>Why Sponsor Us</h4></td>
+	<td id="btn3" class = "menu"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i><h4>Past Speakers</h4></td>
+	<td id="btn4" class = "menu"><i class="fa fa-fire fa-2x" aria-hidden="true"></i><h4>Aurora Nites</h4></td>
+	<td id="btn5" class = "menu"><i class="fa fa-users fa-2x" aria-hidden="true"></i><h4>Team</h4></td>
+</tr>
+</table>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<!-- 
+<a href="{% url 'auth_login' %}">Login</a>
+{% if user.is_authenticated %}
+<a href="{% url 'auth_logout' %}">Logout </a>
+{% endif %} -->
+
+<style type="text/css">
+	
+	.imgs
+	{
+		text-align: center;
+	}
+
+	.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(0,0,0,0.5);
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+	.menu
+	{
+		color : rgba(255,255,255,0.7);
+			transition: color 0.7s;
+			-webkit-transform: translateY(12px);
+    -moz-transform: translateY(12px);
+    -ms-transform: translateY(12px);
+    -o-transform: translateY(12px);
+    transform: translateY(12px);
+    -webkit-transition: -webkit-transform 0.3s 0.1s;
+    -moz-transition: -moz-transform 0.3s 0.1s;
+    transition: transform 0.3s 0.1s;
+	}
+
+	.menu:hover
+	{
+		cursor: pointer;
+		color : #091024;
+			transition: color 0.7s;
+			-webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: opacity 0.3s 0.1s, -webkit-transform 0.3s 0.1s;
+    -moz-transition: opacity 0.3s 0.1s, -moz-transform 0.3s 0.1s;
+    transition: opacity 0.3s 0.1s, transform 0.3s 0.1s;
+		
+	}
+
+
+	body
+	{
+		background: url("background.jpg") no-repeat center center fixed;
+		background-size: cover;
+		 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+		color: white;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	.logo
+	{
+		position: fixed;
+		top : calc(35%);
+		left : calc(50% - 4.25em);
+		width: 10em;
+		
+	}
+	.logotext
+	{
+		position: fixed;
+		top : calc(50%);
+		left : calc(50% - 12.5em);
+		width : 25em;
+	}
+	.bits
+	{
+		position: fixed;
+		top : calc(20% - 60px);
+		left : calc(50% - 60px);
+		height : 120px;
+	}
+	.bitskk
+	{	
+		position: relative;
+		background: black;
+		top : calc(30%);
+		text-align: center;
+
+	}
+	.text
+	{
+		top : 20%;
+		text-align:center;
+	}
+
+	.nav
+	{	
+		position:fixed;
+		bottom: 5%;
+		text-align: center;
+		width: 100%;
+	}
+	
+	td
+	{
+		width:20%;
+	}
+</style>
+
+
+<script src="js/TweenLite.min.js"></script>
+        <script src="js/EasePack.min.js"></script>
+        <script src="js/rAF.js"></script>
+        <script src="js/demo-3.js"></script>
+
+</body>
+</html>

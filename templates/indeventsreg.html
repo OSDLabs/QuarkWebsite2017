@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Events - Quark 2017
+{% endblock %}
+
+{% block heading %}
+Events
+{% endblock %}
+
+{% block small %}
+{{ u.eventName }}
+{% endblock %}
+
+{% block content %}
+
+<!-- 	<table class = "table table-striped">
+    <tr>
+    <td><b>{{ f }}</b></td>
+    </tr>
+
+</table> -->
+<h3>Description&nbsp;<small>
+&nbsp;{{ u.event_category }}</small></h3>
+<hr>
+<p>{{ u.event_desc }}</p>
+<br><br>
+<h3>Schedule</h3>
+<hr>
+<p>
+	{% if u.Date %}
+		u.Date
+	{% else %}
+		Will be released soon.
+	{% endif %}
+</p>
+<br><br>
+<form method="POST">
+{% csrf_token %}
+{% if reg %}
+<input class = "btn btn-danger" name = "unreg" type = "submit" value = "De-register" >
+{% else %}
+<input class = "btn btn-success" name = "reg" type = "submit" value = "Register" >
+{% endif %}
+</form>
+
+{% endblock %}

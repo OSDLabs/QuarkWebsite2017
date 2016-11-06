@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Profile - Quark 2017
+{% endblock %}
+
+{% block heading %}
+Profile
+{% endblock %}
+
+{% block content %}
+<div class="row">
+	<!-- <div class="col-sm-2 col-sm-offset-10">
+		<img src = "" style = "height:100px">
+	</div> -->
+</div>
+<br><br>
+<p>Hello {{ request.user.profile.name }},</p>
+<p>Thanks for registering for Quark 2017. We are privileged to host you at our upcoming festival. Register for events by clicking the Events Tab.</p>
+<br><br>
+	<table class = "table table-striped">
+            {% for field in u %}
+    <tr>
+    <td><b>{{ field.label }}</b></td><td> {{ field.data }}</td>
+    </tr>
+{% endfor %}
+</table>
+<a href="{% url 'fillprofile' %}"><button class = "btn btn-primary">Update Profile</button></a>
+{% endblock %}

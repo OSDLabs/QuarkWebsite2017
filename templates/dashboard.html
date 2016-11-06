@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Dashboard - Quark 2017
+{% endblock %}
+
+{% block heading %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+<p>Hello {{ request.user.profile.name }},</p>
+<p>Thanks for registering for Quark 2017. We are privileged to host you at our upcoming festival</p>
+{% endblock %}
