@@ -10,16 +10,16 @@ EVENT_TYPES = (
 	)
 
 CATEGORY = (
-    (u'Drama',u'Drama'),
-    (u'Dance',u'Dance'),
-    (u'Big 4',u'Big 4'),
-    (u'Business',u'Business'),
-    (u'Fine Arts',u'Fine Arts'),
-    (u'Literary',u'Literary'),
-    (u'Music',u'Music'),
-    (u'Film and Photography',u'Film and Photography'),
-    (u'Quiz',u'Quiz'),
-    (u'Special',u'Special'),
+    (u'Design & Build',u'Design & Build'),
+    (u'Programmers Inc.',u'Programmers Inc.'),
+    (u'Electrify',u'Electrify'),
+    (u'Roboficial',u'Roboficial'),
+    (u'Elixir',u'Elixir'),
+    (u'Specials',u'Specials'),
+    (u'Corporate',u'Corporate'),
+    (u'Initiatives',u'Initiatives'),
+    (u'Cubing',u'Cubing'),
+    (u'Matka',u'Matka'),
     )
 
 SPONS = (

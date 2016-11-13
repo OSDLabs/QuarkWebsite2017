@@ -12,16 +12,16 @@ def events(request):
 	cat = []
 	for i in CATEGORY:
 		cat.append(i[0])
-		cat_open = Event.objects.filter(event_category = i[0])
+		cat_open = Event.objects.filter(category = i[0])
 		event_props = []
 		for j in cat_open:
 			event_prop = {}
-			event_prop["name"] = j.eventName
-			event_prop["date"] = j.eventDate
-			event_prop["rules"] = j.eventRules
-			event_prop["pic"] = j.eventpic
-			event_prop["desc"] = j.event_desc
-			event_prop["type"] = j.event_type
+			event_prop["name"] = j.name
+			event_prop["date"] = j.date
+			event_prop["rules"] = j.rules
+			event_prop["pic"] = j.img
+			event_prop["desc"] = j.desc
+			event_prop["type"] = j.types
 			event_props.append(event_prop)
 		cat_names[i[0]] = event_props
 	# print(cat_names)
@@ -39,7 +39,7 @@ def get_item(dictionary, key):
 	return dictionary.get(key)
 @register.filter
 def fullf(eventtype):
-	return 'Team' if eventtype == 'T' else 'Individual'
+	return 'Team' if types == 'T' else 'Individual'
 
 @register.filter
 def checkoffset(catlist, catitem):
@@ -49,8 +49,8 @@ def checkoffset(catlist, catitem):
 		return False
 
 def Ind_Events(request):
-	u_open = Event.objects.filter(event_type = 'S').exclude(event__event_part = request.user).order_by('event_category')
-	u_reg = Event.objects.filter(event_type = 'S', event__event_part = request.user).order_by('event_category')
+	u_open = Event.objects.filter(types = 'S').exclude(event__event_part = request.user).order_by('category')
+	u_reg = Event.objects.filter(types = 'S', event__event_part = request.user).order_by('category')
 	# If Indi_Event_Participants.objects.filter(event=u,event_part=request.user).count() !=0
 	# u2 = Event.objects.filter(event_type = 'S')[0]
 	# u1 = Indi_Event_Participants.objects.filter(event__eventName = u2.eventName)
@@ -62,8 +62,8 @@ def Ind_Events(request):
 	return render(request,"indevents.html", context)
 
 def Team_Events(request):
-	u_open = Event.objects.filter(event_type = 'T').exclude(event__event_part = request.user).order_by('event_category')
-	u_reg = Event.objects.filter(event_type = 'T', event__event_part = request.user).order_by('event_category')
+	u_open = Event.objects.filter(types = 'T').exclude(event__event_part = request.user).order_by('category')
+	u_reg = Event.objects.filter(types = 'T', event__event_part = request.user).order_by('category')
 	# If Indi_Event_Participants.objects.filter(event=u,event_part=request.user).count() !=0
 	# u2 = Event.objects.filter(event_type = 'S')[0]
 	# u1 = Indi_Event_Participants.objects.filter(event__eventName = u2.eventName)
