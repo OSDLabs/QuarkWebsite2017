@@ -149,9 +149,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-          {% for i in request.user.coursestudent.all %}
-            <li><a href="/course/{{ i.course.code }}/"><i class="fa fa-circle-o"></i>{{ i.course }}</a></li>
-          {% endfor %}
+            <li><a href="/events/individual/"><i class="fa fa-circle-o"></i>Individual</a></li>
+            <li><a href="/events/team/"><i class="fa fa-circle-o"></i>Team</a></li>
           </ul>
         </li>
       </ul>

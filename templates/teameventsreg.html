@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Events - Quark 2017
+Events - Waves 2016
 {% endblock %}
 
 {% block heading %}
@@ -20,24 +20,15 @@ Events
     </tr>
 
 </table> -->
-<h3>Description&nbsp;<small>
-&nbsp;{{ u.category }}</small></h3>
-<hr>
-<p>{{ u.desc }}</p>
-<br><br>
-<h3>Schedule</h3>
-<hr>
-<p>
-		Will be released soon.
-</p>
-<br><br>
 <form method="POST">
 {% csrf_token %}
 {% if reg %}
-<input class = "btn btn-danger" name = "unreg" type = "submit" value = "De-register" >
+<input class = "btn btn-danger" name = "unreg" type = "submit" value = "Leave Team and De-register" >
 {% else %}
-<input class = "btn btn-success" name = "reg" type = "submit" value = "Register" >
+
+<input class = "btn btn-info" name = "reg" type = "submit" value = "Join Team" >
 {% endif %}
 </form>
+<a href="/events/teamcreate/{{ u.id }}"><button class="btn btn-success" >Create Team</button></a>
 
 {% endblock %}
