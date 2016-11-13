@@ -11,6 +11,12 @@ urlpatterns = [
     url(r'^about/$', 'home.views.about', name='about'),
     url(r'^ca/$', 'home.views.ca', name='ca'),
     url(r'^sponsor/$', 'home.views.sponsor', name='ca'),
+    url(r'^events/$', 'events.views.events', name='events'),
+
+    url(r'^events/individual/$','events.views.Ind_Events', name='indevents'),
+    url(r'^events/individual/([0-9]+)$','events.views.Ind_Events_Reg', name='indeventsreg'),
+    url(r'^events/team/$','events.views.Team_Events', name='teamevents'),
+    url(r'^events/team/([0-9]+)$','events.views.Team_Events_Reg', name='teameventsreg'),
 
     url(r'^profile/$', 'panel.views.SeeProfile', name='profile'),
     url(r'^update-profile/$', 'panel.views.FillProfile', name='fillprofile'),

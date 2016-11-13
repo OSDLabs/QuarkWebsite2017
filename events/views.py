@@ -48,45 +48,6 @@ def checkoffset(catlist, catitem):
 	else:
 		return False
 
-def sponsors(request):
-	cat = []
-	for i in SPONS:
-		cat.append(i[0])
-		cat_open = Sponsor.objects.filter(spons_type= i[0]).order_by('order')
-		event_props = []
-		for j in cat_open:
-			event_prop = {}
-			event_prop["order"] = j.order
-			event_prop["desc"] = j.desc
-			event_prop["link"] = j.link
-			event_prop["img"] = j.img
-			event_props.append(event_prop)
-		cat_names[i[0]] = event_props
-	# print(cat_names)
-	context = {
-		"category" : cat,
-		"cat":cat_names
-		}
-	return render(request, "front_spons.html",context)
-
-def foodfest(request):
-	cat_open = FoodFest.objects.order_by('order')
-	event_props = []
-	for j in cat_open:
-		event_prop = {}
-		event_prop["order"] = j.order
-		event_prop["desc"] = j.desc
-		event_prop["link"] = j.link
-		event_prop["img"] = j.img
-		event_props.append(event_prop)
-	# print(cat_names)
-	context = {
-		"cat":event_props
-		}
-	return render(request, "front_food.html",context)
-
-
-# Create your views here.
 def Ind_Events(request):
 	u_open = Event.objects.filter(event_type = 'S').exclude(event__event_part = request.user).order_by('event_category')
 	u_reg = Event.objects.filter(event_type = 'S', event__event_part = request.user).order_by('event_category')
