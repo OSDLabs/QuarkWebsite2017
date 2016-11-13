@@ -27,7 +27,7 @@ SECRET_KEY = '@2t7$g*jbmh4y212w#2!43r9lyi2s(26wr@qxs32)x4n(_b_wg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bits-quark.org', 'www.bits-quark.org']
 
 
 # Application definition
@@ -76,6 +76,21 @@ TEMPLATES = [
     },
 ]
 
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+
+STATIC_ROOT = '/home/bitsfest/webapps/quarkstatic'
+
+MEDIA_URL = "/media/"
+
+MEDIA_ROOT = '/home/bitsfest/webapps/quarkmedia'
+
+
 WSGI_APPLICATION = 'quark.wsgi.application'
 
 
@@ -108,13 +123,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
-
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
-]
 
 #Registration redux
 ACCOUNT_ACTIVATION_DAYS = 3

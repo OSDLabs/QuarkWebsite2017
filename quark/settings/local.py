@@ -112,6 +112,8 @@ STATICFILES_DIRS = [
     '/var/www/static/',
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 #Registration redux
 ACCOUNT_ACTIVATION_DAYS = 3
 REGISTRATION_AUTO_LOGIN = True
