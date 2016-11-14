@@ -51,9 +51,6 @@ def checkoffset(catlist, catitem):
 def Ind_Events(request):
 	u_open = Event.objects.filter(types = 'S').exclude(event__event_part = request.user).order_by('category')
 	u_reg = Event.objects.filter(types = 'S', event__event_part = request.user).order_by('category')
-	# If Indi_Event_Participants.objects.filter(event=u,event_part=request.user).count() !=0
-	# u2 = Event.objects.filter(event_type = 'S')[0]
-	# u1 = Indi_Event_Participants.objects.filter(event__eventName = u2.eventName)
 	context = {
 		'u': u_open,
 		'u1' : u_reg,
@@ -64,9 +61,6 @@ def Ind_Events(request):
 def Team_Events(request):
 	u_open = Event.objects.filter(types = 'T').exclude(event__event_part = request.user).order_by('category')
 	u_reg = Event.objects.filter(types = 'T', event__event_part = request.user).order_by('category')
-	# If Indi_Event_Participants.objects.filter(event=u,event_part=request.user).count() !=0
-	# u2 = Event.objects.filter(event_type = 'S')[0]
-	# u1 = Indi_Event_Participants.objects.filter(event__eventName = u2.eventName)
 	context = {
 		'u': u_open,
 		'u1' : u_reg,

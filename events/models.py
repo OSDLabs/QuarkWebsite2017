@@ -37,7 +37,7 @@ class Event(models.Model):
     category = models.CharField(max_length=50, choices = CATEGORY, default='')
 
     def __str__(self):
-        return self.eventName
+        return self.name
 
 class Indi_Event_Participants(models.Model):
 	event = models.ForeignKey(Event, related_name = "event", on_delete = models.CASCADE)
