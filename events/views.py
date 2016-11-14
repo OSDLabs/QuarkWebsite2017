@@ -39,7 +39,7 @@ def get_item(dictionary, key):
 	return dictionary.get(key)
 @register.filter
 def fullf(eventtype):
-	return 'Team' if types == 'T' else 'Individual'
+	return 'Team' if eventtype == 'T' else 'Individual'
 
 @register.filter
 def checkoffset(catlist, catitem):
