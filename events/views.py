@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import Event,Indi_Event_Participants, CATEGORY, SPONS, Sponsor, FoodFest
+from .models import Event,Indi_Event_Participants, CATEGORY, SPONS, Sponsor, FoodFest, Workshop
 from django.contrib import messages
 from django.db.models import Q
 from django.template import Context
@@ -33,15 +33,15 @@ def events(request):
 		context["username"] = username
 	return render(request, "front_events.html",context)
 
-def workshops(request):
+def workshop(request):
 	workshops = []
-	for i in Workshop.objects.all()
+	for i in Workshop.objects.all():
 		workshop = {}
-		workshop["name"] = j.name
-		workshop["date"] = j.date
-		workshop["brochure"] = j.brochure
-		workshop["pic"] = j.img
-		workshop["desc"] = j.desc
+		workshop["name"] = i.name
+		workshop["date"] = i.date
+		workshop["brochure"] = i.brochure
+		workshop["pic"] = i.img
+		workshop["desc"] = i.desc
 		workshops.append(workshop)
 	# print(cat_names)
 	context = {
@@ -55,7 +55,7 @@ def workshops(request):
 @register.filter
 def get_item(dictionary, key):
 	return dictionary.get(key)
-	
+
 @register.filter
 def fullf(eventtype):
 	return 'Individual' if eventtype == 'S' else 'Team'

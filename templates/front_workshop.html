@@ -21,13 +21,13 @@ Quark 2017 | Shifting Paradigms
 </head>
 <body class="container-fluid">
 <div class = "row vcenter">
-<h1>Events</h1>
+<h1>Workshops</h1>
 <h2><a href="http://bits-quark.org/accounts/register/">Register</a></h2>
 <h3><a href="http://bits-quark.org/accounts/login/">Login</a></h3>
 <br>
 <div class = "row">
 {% for j in workshops %}
-<div class='col-sm-6 {% if catget|checkoffset:j %} col-sm-offset-3 {% endif %}' style="text-align: center;">
+<div class='col-sm-6' style="text-align: center;">
 <div class="eventcard card-1">
     {% if j.img %}
     <img class = "eventpic" src="/media/{{ j.img }}">
@@ -39,7 +39,6 @@ Quark 2017 | Shifting Paradigms
 </div>
 </div>
 {% endfor %}
-{% endwith %}
 </div>
 <div class='col-sm-6 col-sm-offset-3' style="text-align: center;">
 
