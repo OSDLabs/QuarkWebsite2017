@@ -17,7 +17,6 @@ def events(request):
 		for j in cat_open:
 			event_prop = {}
 			event_prop["name"] = j.name
-			event_prop["date"] = j.date
 			event_prop["rules"] = j.rules
 			event_prop["pic"] = j.img
 			event_prop["desc"] = j.desc
@@ -34,12 +33,32 @@ def events(request):
 		context["username"] = username
 	return render(request, "front_events.html",context)
 
+def workshops(request):
+	workshops = []
+	for i in Workshop.objects.all()
+		workshop = {}
+		workshop["name"] = j.name
+		workshop["date"] = j.date
+		workshop["brochure"] = j.brochure
+		workshop["pic"] = j.img
+		workshop["desc"] = j.desc
+		workshops.append(workshop)
+	# print(cat_names)
+	context = {
+		"workshops" : workshops,
+	}
+	if request.user.is_authenticated():
+		username = request.user.username
+		context["username"] = username
+	return render(request, "front_workshop.html",context)
+
 @register.filter
 def get_item(dictionary, key):
 	return dictionary.get(key)
+	
 @register.filter
 def fullf(eventtype):
-	return 'Team' if eventtype == 'T' else 'Individual'
+	return 'Individual' if eventtype == 'S' else 'Team'
 
 @register.filter
 def checkoffset(catlist, catitem):

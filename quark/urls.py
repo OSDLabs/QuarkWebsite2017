@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^ca/$', 'home.views.ca', name='ca'),
     url(r'^sponsor/$', 'home.views.sponsor', name='ca'),
     url(r'^events/$', 'events.views.events', name='events'),
+    url(r'^workshop/$', 'events.views.workshop', name='workshop'),
 
     url(r'^events/individual/$','events.views.Ind_Events', name='indevents'),
     url(r'^events/individual/([0-9]+)$','events.views.Ind_Events_Reg', name='indeventsreg'),

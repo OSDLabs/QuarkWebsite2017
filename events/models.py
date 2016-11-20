@@ -29,12 +29,21 @@ SPONS = (
     )
 class Event(models.Model):
     name = models.CharField(max_length=100)
-    date = models.DateTimeField(blank=True, null=True)
     rules = models.FileField(upload_to = "adminuploads/events/rules/" , blank=True, null=True)
     img = models.ImageField(upload_to = "adminuploads/events/pics/" ,blank=True, null=True)
     desc = models.TextField(blank=True, null=True)
     types = models.CharField(max_length=1, choices=EVENT_TYPES)
     category = models.CharField(max_length=50, choices = CATEGORY, default='')
+
+    def __str__(self):
+        return self.
+
+class Workshop(models.Model):
+    name = models.CharField(max_length=100)
+    date = models.DateTimeField(blank=True, null=True)
+    brochure = models.FileField(upload_to = "adminuploads/workshop/brochure/" , blank=True, null=True)
+    img = models.ImageField(upload_to = "adminuploads/workshop/poster/" ,blank=True, null=True)
+    desc = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return self.name
