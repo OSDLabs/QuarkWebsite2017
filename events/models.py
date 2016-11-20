@@ -36,7 +36,7 @@ class Event(models.Model):
     category = models.CharField(max_length=50, choices = CATEGORY, default='')
 
     def __str__(self):
-        return self.
+        return self.name
 
 class Workshop(models.Model):
     name = models.CharField(max_length=100)
