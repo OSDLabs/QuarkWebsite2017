@@ -132,3 +132,13 @@ def Ind_Events_Reg(request,regid):
 	}
 
 	return render(request,"indeventsreg.html", context)
+
+def workshopregister(request):
+	u_open = Workshop.objects.all().exclude(workshop__workshop_part = request.user)
+	u_reg = Workshop.objects.filter(workshop__workshop_part = request.user)
+	context = {
+		'u': u_open,
+		'u1' : u_reg,
+	}
+
+	return render(request,"back_workshops.html", context)

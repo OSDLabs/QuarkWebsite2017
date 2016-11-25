@@ -48,6 +48,11 @@ class Workshop(models.Model):
     def __str__(self):
         return self.name
 
+class Workshop_Participants(models.Model):
+    workshop = models.ForeignKey(Event, related_name = "workshop", on_delete = models.CASCADE)
+    workshop_part = models.ForeignKey(User, related_name = "workshop_participating", on_delete = models.CASCADE)
+
+
 class Indi_Event_Participants(models.Model):
 	event = models.ForeignKey(Event, related_name = "event", on_delete = models.CASCADE)
 	event_part = models.ForeignKey(User, related_name = "event_participating", on_delete = models.CASCADE)
