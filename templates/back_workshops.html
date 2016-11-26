@@ -12,16 +12,16 @@ Individual Events
 <h4>Open for registration</h4>
 	<div class = "list-group">
             {% for field in u %}
-    <a href = "/events/individual/{{ field.id }}" class="list-group-item"><span class="badge">+ Participate</span>
-    {{ field.name }} <span style = "background-color:white; color:black"class="badge">{{ field.category }}</span>
+    <a href = "/workshop-register/{{ field.id }}" class="list-group-item"><span class="badge">+ Participate</span>
+    {{ field.name }}
     </a>
 {% endfor %}
 </div>
 <h4>Already registered</h4>
 	<div class = "list-group">
             {% for field in u1 %}
-    <a href = "/events/individual/{{ field.id }}" class="list-group-item"><span style="background-color:#7ec0ee" class="badge">+ Details</span>
-    {{ field.name }}<span style = "background-color:white; color:black"class="badge">{{ field.category }}</span>
+    <a href = "/workshop-register/{{ field.id }}" class="list-group-item"><span style="background-color:#7ec0ee" class="badge">+ Details</span>
+    {{ field.name }}
     </a>
 {% endfor %}
 </div>

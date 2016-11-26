@@ -63,24 +63,20 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="hidden-xs"> {% if request.user.profile %}{{ request.user.profile.full_name }}{% else %}{{ request.user }}{% endif %}</span>
+              <span class="hidden-xs"> {% if request.user.profile %}{{ request.user.profile.name }}{% else %}{{ request.user }}{% endif %} </span><i class="fa fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-
-                <p>
+              <p>
                 {% if request.user.profile %}
-                 {{ request.user.profile.full_name }}
-                  <small>{{ request.user.profile.email }}</small>
+                  {{ request.user.profile.name }}
                 {% else %}
                   {{ request.user }}
-                  <small>{{ request.user.email }}</small>
+                  {{ request.user.email }}
                 {% endif %}
                 </p>
               </li>
-              <!-- Menu Body -->
-              <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
                   <a href="#" class="btn btn-default btn-flat">Profile</a>

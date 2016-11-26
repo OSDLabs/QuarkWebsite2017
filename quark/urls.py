@@ -15,6 +15,8 @@ urlpatterns = [
     url(r'^workshop/$', 'events.views.workshop', name='workshop'),
     url(r'^workshop-register/$', 'events.views.workshopregister', name= 'workshopregister'),
 
+    url(r'^workshop-register/([0-9]+)$', 'events.views.Workshop_Reg', name= 'workshopregisterpage'),
+
     url(r'^events/individual/$','events.views.Ind_Events', name='indevents'),
     url(r'^events/individual/([0-9]+)$','events.views.Ind_Events_Reg', name='indeventsreg'),
     url(r'^events/team/$','events.views.Team_Events', name='teamevents'),

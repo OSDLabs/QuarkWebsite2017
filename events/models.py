@@ -49,7 +49,7 @@ class Workshop(models.Model):
         return self.name
 
 class Workshop_Participants(models.Model):
-    workshop = models.ForeignKey(Event, related_name = "workshop", on_delete = models.CASCADE)
+    workshop = models.ForeignKey(Workshop, related_name = "workshop", on_delete = models.CASCADE)
     workshop_part = models.ForeignKey(User, related_name = "workshop_participating", on_delete = models.CASCADE)
 
 

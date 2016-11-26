@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import Event,Indi_Event_Participants, CATEGORY, SPONS, Sponsor, FoodFest, Workshop
+from .models import *
 from django.contrib import messages
 from django.db.models import Q
 from django.template import Context
@@ -142,3 +142,27 @@ def workshopregister(request):
 	}
 
 	return render(request,"back_workshops.html", context)
+
+
+def Workshop_Reg(request,regid):
+	u = Workshop.objects.get(pk=regid)
+	reg = False
+	try:
+		Workshop_Participants.objects.get(workshop=u,workshop_part=request.user)
+		reg = True
+		if request.POST.get('unreg'):
+			lorem = Workshop_Participants.objects.get(workshop=u,workshop_part=request.user)
+			lorem.delete()
+			return redirect('workshopregister')
+	except: 
+		if request.POST.get('reg'):
+			lorem = Workshop_Participants(workshop=u,workshop_part=request.user)
+			lorem.save()
+			return redirect('workshopregister')
+
+	context = {
+		'u': u,
+		'reg':reg,
+	}
+
+	return render(request,"back_workshop_reg.html", context)
