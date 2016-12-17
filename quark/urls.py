@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^update-profile/$', 'panel.views.FillProfile', name='fillprofile'),
     url(r'^dashboard/$', 'panel.views.Dashboard', name='dashboard'),
 
+    url(r'^sponsors/$', 'sponsor.views.sponsors', name='contact'),
+
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

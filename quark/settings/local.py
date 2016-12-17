@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'home',
     'panel',
     'events',
+    'sponsor',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -107,10 +108,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_URL = "/media/"
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     '/var/www/static/',
 ]
+
+MEDIA_ROOT = BASE_DIR
 
 #Registration redux
 ACCOUNT_ACTIVATION_DAYS = 3

@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'home',
     'panel',
     'events',
+    'sponsor',
 )
 
 MIDDLEWARE_CLASSES = (

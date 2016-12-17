@@ -22,11 +22,6 @@ CATEGORY = (
     (u'Matka',u'Matka'),
     )
 
-SPONS = (
-    (u'Our Sponsors',u'Our Sponsors'),
-    (u'Our Media Partners',u'Our Media Partners'),
-    (u'Our Associations',u'Our Associations'),
-    )
 class Event(models.Model):
     name = models.CharField(max_length=100)
     rules = models.FileField(upload_to = "adminuploads/events/rules/" , blank=True, null=True)
@@ -63,17 +58,3 @@ class Rounds(models.Model):
     day = models.DateField()
     location = models.CharField(max_length = 50)
     time = models.TimeField()
-
-class Sponsor(models.Model):
-    order = models.IntegerField()
-    desc = models.CharField(max_length=200, blank = True, null=True)
-    link = models.CharField(max_length=100)
-    img = models.ImageField(upload_to = "adminuploads/sponsors/")
-    types = models.CharField(max_length=100, choices=SPONS)
-
-class FoodFest(models.Model):
-    order = models.IntegerField()
-    desc = models.CharField(max_length=200, blank = True, null=True)
-    link = models.CharField(max_length=100)
-    img = models.ImageField(upload_to = "adminuploads/sponsors/")
-    # spons_type = models.CharField(max_length=100, choices=SPONS)
