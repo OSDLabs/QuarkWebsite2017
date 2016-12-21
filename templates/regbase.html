@@ -20,8 +20,9 @@
 <body class="container-fluid">
 <div class = "row vcenter">
 <div class='col-sm-4 col-sm-offset-4'>
+<img class = "logotext" src="{% static 'img/quark_logo2.png' %}" alt="quarklogo"><br><br>
 <h3 style = "text-align: center">{% block head %}
-{% endblock %}</h3><br><br>
+{% endblock %}</h3>
 <div class="panel panel-primary">
 <div class="panel-body">
 {% block content %}
@@ -37,6 +38,14 @@
 </div>
 </div>
 <style type="text/css">
+.logotext
+    {
+        position: fixed;
+        top : -1em;
+        left : calc(50% - 10em);
+        width : 20em;
+        z-index: -1;
+    }
 	body
 	{
         background-color: #eee;

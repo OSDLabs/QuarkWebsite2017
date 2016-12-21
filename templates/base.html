@@ -47,14 +47,23 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini">Quark</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Quark 2017</b></span>
+      <span class="logo-lg"><img class = "logotext" src="{% static 'img/quark_logo.png' %}" alt="quarklogo"></span>
+      <style type="text/css">
+        .logotext
+    {
+        position: fixed;
+        top : -1em;
+        left : 1em;
+        width : 8em;
+    }
+      </style>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+     <!--  <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
-      </a>
+      </a> -->
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -153,6 +162,18 @@
           <a href="{% url 'workshopregister' %}">
             <i class="fa fa-cogs"></i> <span>Workshops</span>
           </a>
+        </li>
+        <li>
+          <i><img class = "logot" src="{% static 'img/quark.png' %}" alt="quarklogo"></i>
+          <style type="text/css">
+        .logot
+    {
+        position: fixed;
+        bottom : 20%;
+        left : 3em;
+        width : 10em;
+    }
+      </style>
         </li>
       </ul>
     </section>
