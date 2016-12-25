@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^profile/$', 'panel.views.SeeProfile', name='profile'),
     url(r'^update-profile/$', 'panel.views.FillProfile', name='fillprofile'),
     url(r'^dashboard/$', 'panel.views.Dashboard', name='dashboard'),
+    url(r'^pay/$', 'panel.views.pay', name='pay'),
 
     url(r'^sponsors/$', 'sponsor.views.sponsors', name='contact'),
 

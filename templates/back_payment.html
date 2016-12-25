@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Events - Quark 2017
+{% endblock %}
+
+{% block heading %}
+Events
+{% endblock %}
+
+{% block small %}
+{{ u.name }}
+{% endblock %}
+
+{% block content %}
+
+<!-- 	<table class = "table table-striped">
+    <tr>
+    <td><b>{{ f }}</b></td>
+    </tr>
+
+</table> -->
+<iframe src="/static/payment.pdf" style="width:100%; height:80vh;" frameborder="0"></iframe>
+<br><br>
+<a target = "_blank" href="https://www.onlinesbi.com/prelogin/icollecthome.htm"><button class="btn btn-primary">SBI Collect Payment Link</button></a>
+
+{% endblock %}
