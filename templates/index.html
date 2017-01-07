@@ -1,312 +1,321 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
+
 <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quark '17</title>
+    <!-- FONTS! -->
+    <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <!-- STYLESHEETS! -->
+    <link rel="shortcut icon" href="{% static 'img/bits.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/component.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <script src="{% static 'js/modernizr-custom.js' %}"></script>
+</head>
 
+<body>
+    <!-- navigation -->
+    <div class="container-fluid " id="nav-container">
+        <nav class="pages-nav">
+            <div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
+            <div class="pages-nav__item">
+                <a class="link link--page" href="#page-empty0"></a>
+                <!-- SVG -->
+                <div class="container-fluid">
+                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600px" height="100px" viewBox="0 0 600 100" class="glitch">
+                        <style type="text/css">
+                        <![CDATA[ text {
+                            filter: url(#filter);
+                            fill: silver;
+                            font-family: 'Share Tech Mono', sans-serif;
+                            font-size: 100px;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                        }
+                        
+                        ]]>
+                        </style>
+                        <defs>
+                            <filter id="filter">
+                                <feFlood flood-color="black" result="black" />
+                                <feFlood flood-color="red" result="flood1" />
+                                <feFlood flood-color="limegreen" result="flood2" />
+                                <feOffset in="SourceGraphic" dx="3" dy="0" result="off1a" />
+                                <feOffset in="SourceGraphic" dx="2" dy="0" result="off1b" />
+                                <feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a" />
+                                <feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b" />
+                                <feComposite in="flood1" in2="off1a" operator="in" result="comp1" />
+                                <feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
+                                <feMerge x="0" width="100%" result="merge1">
+                                    <feMergeNode in="transparent" />
+                                    <feMergeNode in="comp1" />
+                                    <feMergeNode in="off1b" />
+                                    <animate attributeName="y" id="y" dur="4s" values='104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px' keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1' repeatCount="indefinite" />
+                                    <animate attributeName="height" id="h" dur="4s" values='10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px' keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1' repeatCount="indefinite" />
+                                </feMerge>
+                                <feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
+                                    <feMergeNode in="transparent" />
+                                    <feMergeNode in="comp2" />
+                                    <feMergeNode in="off2b" />
+                                    <animate attributeName="y" id="y" dur="4s" values='103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;' keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1' repeatCount="indefinite" />
+                                    <animate attributeName="height" id="h" dur="4s" values='0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px' keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1' repeatCount="indefinite" />
+                                </feMerge>
+                                <feMerge>
+                                    <feMergeNode in="SourceGraphic" />
+                                    <feMergeNode in="merge1" />
+                                    <feMergeNode in="merge2" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <g>
+                            <text x="0" y="100" class="noselect">
+                                Quark 2017
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <!-- SVG -->
+            </div>
+            <div class="pages-nav__item"><a class="link link--page" href="#page-about-us">About Us</a></div>
+            <div class="pages-nav__item"><a class="link link--page" href="#page-reach">Reach BITS</a></div>
+            <div class="pages-nav__item">
+                <a class="link link--page" href="#page-empty1"></a>
+            </div>
+            <div class="pages-nav__item"><a class="link link--page" href="#page-accomodation">Accomodation</a></div>
+            <!-- <div class="pages-nav__item"><a class="link link--page" href="#page-feedback">Your Feedback</a></div> -->
+            <div class="pages-nav__item">
+                <a class="link link--page" href="#page-empty2"></a>
+            </div>
+            <div class="pages-nav__item">
+                <a class="link link--page" href="#page-empty3"></a>
+            </div>
+        </nav>
+    </div>
+    <!-- /navigation-->
+    <!-- pages stack -->
+    <div class="pages-stack">
+        <!-- HOME -->
+        <div class="page" id="page-home">
+            <div class="wrapper">
+                <!-- VIDEO BACKGROUND -->
+                <div class="fullscreen-bg">
+                    <video loop muted autoplay poster="{% static 'img/firstframe_videobackground2.png' %}" class="fullscreen-bg__video">
+                        <source src="{% static 'video/videobackground2.webm' %}" type="video/webm">
+                        <source src="{% static 'video/videobackground2_1080p.mp4' %}" type="video/mp4">
+                        <!-- <source src="video/videobackground.ogv" type="video/ogg"> -->
+                    </video>
+                </div>
+                <!-- /VIDEO BACKGROUND -->
+                <!-- SOCIAL ICONS -->
+                <!-- /SOCIAL ICONS -->
+                <!-- LOGOS -->
+                <div class="bpgclogo-container">
+                    <img src="{% static 'img/BITS_Pilani-Logo.png' %}" alt="" id="bpgclogo">
+                </div>
+                <div class="Qlogo-container">
+                    <img src="{% static 'img/qlogobetter.png' %}" alt="" id="Qlogo">
+                </div>
+                <div class="quark17-container">
+                    <img src="{% static 'img/quark_black_composite2.png' %}" alt="" id="quark17">
+                </div>
+                <!-- /LOGOS -->
+                <!-- COUNTDOWN -->
+                <div class="countdown-container">
+                    <div id="countdown">
+                        <div id='tiles'></div>
+                        <div class="labels">
+                            <li>Days</li>
+                            <li>Hours</li>
+                            <li>Mins</li>
+                            <li>Secs</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COUNTDOWN -->
+                <!-- MAIN ICONS -->
+                <div class="navigation-menu-container">
+                    <ul class="navigation-menu">
+                        <li class="nm-workshops"><a href=""><i class="fa fa-cogs fa-2x"></i><br><br>
+                        Workshops
+                        </a></li>
+                        <li class="nm-guestspeakers"><a href=""><i class="fa fa-street-view fa-2x"></i><br><br>
+                        Guest Speakers
+                        </a></li>
+                        <li class="nm-auroranites"><a href=""><i class="fa fa-fire fa-2x"></i><br><br>
+                        Aurora Nites
+                        </a></li>
+                        <li class="nm-events"><a href=""><i class="fa fa-suitcase fa-2x"></i><br><br>
+                        Events
+                        </a></li>
+                        <li class="nm-exhibits"><a href=""><i class="fa fa-cubes fa-2x"></i><br><br>
+                        Exhibits
+                        </a></li>
+                        <li class="nm-pastspeakers"><a href=""><i class="fa fa-graduation-cap fa-2x"></i><br><br>
+                        Past Speakers
+                        </a></li>
+                        <li class="nm-oursponsors"><a href=""><i class="fa fa-flag-checkered fa-2x"></i><br><br>
+                        Partners
+                        </a></li>
+                        <li class="nm-ourteam"><a href=""><i class="fa fa-users fa-2x"></i><br><br>Our Team</a></li>
+                        <li class="nm-login"><a href=""><i class="fa fa-user fa-2x"></i><br><br>
+                        Login
+                        </a></li>
+                        <li class="nm-register"><a href=""><i class="fa fa-sign-in fa-2x"></i><br><br>
+                        Register
+                        </a></li>
+                        <div class="current">
+                            <div class="top-arrow"></div>
+                            <div class="current-back"></div>
+                            <div class="bottom-arrow"></div>
+                        </div>
+                    </ul>
+                </div>
+                <!-- /MAIN ICONS -->
+            </div>
+        </div>
+        <!-- /HOME -->
+        <div class="page" id="page-about-us">
+            <div class="aboutuscontainer">
+                <div id="aboutusheading1container">
+                    <h1>About <span>Us</span></h1>
+                </div>
+                <br>
+                <div id="aboutusheading4container">
+                    <h4>Quark is one of India's largest science, technology and management festivals, held every February at BITS Pilani - K.K. Birla Goa Campus.</h2>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div id="aboutusparagraphcontainer">
+                    <p class="about-us-content">
+                        Quark is the annual techno-managerial and innovation festival of the BITS Pilani K. K. Birla Goa Campus which has grown manifold since its humble inception in 2006. Quark achieved a cult status on the national level with its 2008 iteration and made a quantum leap in 2010, when it went international for the first time.
+                    </p>
+                    <p class="about-us-content">
+                        With a plethora of competitions and exhibitons to challenge one's expertise as well as palpate ones inquisitiveness, Quark sets the stage for face-offs between the best minds in the disciplines of engineering, science and management. It organizes workshops in various technical and corporate areas, giving participants an opportunity to tread new fields by gaining hands-on practical knowledge from eminent professionals. Quark offers a platform to budding innovators to exchange ideas and showcase cutting edge research through special events such as the Paper Presentation and Open Showcase.
+                    </p>
+                    <p class="about-us-content">
+                        The fest has been graced by the presence of distinguished personalities from various fields. Over the years, Quark has been privileged by the presence of some of the most distinguished scientists, entrepreneurs and world leaders. Notable personalities include the Former President of India, Dr. APJ Abdul Kalam, Nobel Laureates like Sir Harold Kroto and Prof Douglas Osheroff, eminent scientists such as Dr. Chris Phillips and Dr. Vic Hayes, and many more. In 2013, Quark was awarded UNESCO Patronage, the highest form of support granted to an organisation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- /SCHEDULE -->
+        <div class="page" id="page-reach">
 
-<link rel="shortcut icon" href="{% static 'img/quark.png' %}">
-<link rel="icon" type="image/png" href="{% static 'img/quark.png' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'css/component.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'css/bar.css' %}" />
+          <div class="page-reach-wrapper">
+             <div class="reachbitscontainer">
+                <div id="reachbitsheading1container">
+                    <h1>Reach <span>Bits</span></h1>
+                </div>
+                <br>
+                <div id="reachbitsheading4container">
+                    <h3>Coming for Quark 2017 ? Have a look at a few routes to our campus!</h3>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="map-container">
+<!--                     <div class="map" id="map-canvas">
+                        
+                    </div> -->
+               <div class="reachbitsfromplane"> 
+               <i class="fa fa-2x fa-plane"></i>
+                
+                <div class="map1-container"> <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d30774.328680666484!2d73.84115103308551!3d15.387796644634681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bbfc7fa8c0cf84d%3A0xb7d429222d347557!2sGoa+International+Airport%2C+Dabolim%2C+Goa!3m2!1d15.380348499999998!2d73.8349952!4m5!1s0x3bbfb8375851666d%3A0x4ad5683010110240!2sBITS+Pilani+K+K+Birla+Goa+Campus%2C+NH+17B+Bypass+Road%2C+Zuarinagar%2C+Pilani%2C+Sancoale%2C+Goa+403726!3m2!1d15.390042999999999!2d73.877348!5e0!3m2!1sen!2sin!4v1451332390183" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+                <h4>From Goa International Airport</h4>
+                </div>
+
+                <div class="reachbitsfromtrain">
+                <i class="fa fa-2x fa-train"></i>
+                <div class="map2-container"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d123132.95365701096!2d73.85816305409067!3d15.32740784926759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bbfb3c7df37152f%3A0xa250076c196fb63!2sMadgaon+Junction+Railway+Station%2C+Sanscar+Society%2C+Margao%2C+Goa!3m2!1d15.2677585!2d73.970143!4m5!1s0x3bbfb8375851666d%3A0x4ad5683010110240!2sBITS+Pilani+K+K+Birla+Goa+Campus%2C+NH+17B+Bypass+Road%2C+Zuarinagar%2C+Pilani%2C+Sancoale%2C+Goa+403726!3m2!1d15.390042999999999!2d73.877348!5e0!3m2!1sen!2sin!4v1451332542853" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <h4>From Madgaon Railway Station</h4>
+                </div>
+
+                </div>
         
 
-
-<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-	<title>Quark 2017 - Shifting Paradigms</title>
-<script src="https://use.fontawesome.com/1a7fce54c7.js"></script>
-
-<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
-<script src="{% static 'js/pace.min.js' %}"></script>
-
-
-
-
-</head>
-<body>
-
-
-<div class="container demo-3" style = "text-align:center">
-<div class="content">
-<div id="large-header" class="large-header">
-<canvas id="demo-canvas"></canvas>
-<div class="imgs">
-	<img class = "bits" src="{% static 'img/bits.png' %}" alt="bitslogo">
-	<!-- <p class = "bitskk">presents</p> -->
-	<img class = "logo" src="{% static 'img/quark.png' %}" alt="quarklogo">
-	<img class = "logotext" src="{% static 'img/quark_logo.png' %}" alt="quarklogo">
-	
-</div>
-<!-- <div style="top:10%;postion:relative;z-index:3000;">
-	<p>Visit previous years website</p>
-</div> -->
-<div>
-
-
-
-<table class = "nav navleft">
-
-<tr>
-	<td id="btn1" class = "menu"><a href="/about/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i><h4>About Us</h4></a></td></tr>
-<tr>	<td id="btn2" class = "menu"><a href="/sponsors/"><i class="fa fa-flag-checkered fa-2x" aria-hidden="true"></i><h4>Our Sponsors</h4></a></td></tr>
-<tr><td id="btn6" class = "menu"><a href="/team/"><i class="fa fa-users fa-2x" aria-hidden="true"></i><h4>Our Team</h4></a></td></tr>
-<tr><td id="btn7" class = "menu"><a href="/ca/"><i class="fa fa-user-secret fa-2x" aria-hidden="true"></i><h4>Campus Ambassador</h4></a></td></tr>
-<tr><td id="btn6" class = "menu"><a href="/accounts/register"><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i><h4>Register</h4></a></td></tr>
-</table>
-<table class= "nav navright">
-<tr>	<td id="btn3" class = "menu"><a href="/speakers/"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i><h4>Past Speakers</h4></a></td></tr>
-<tr>	<td id="btn4" class = "menu"><a href="/nites/"><i class="fa fa-fire fa-2x" aria-hidden="true"></i><h4>Aurora Nites</h4></a></td></tr>
-<tr>	<td id="btn5" class = "menu"><a href="/exhibits/"><i class="fa fa-cubes fa-2x" aria-hidden="true"></i><h4>Exhibits</h4></a></td></tr>
-<tr>	<td id="btn5" class = "menu"><a target="_blank" href="/events/"><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i><h4>Events</h4></a></td></tr>
-<tr>	<td id="btn6" class = "menu"><a href="/workshop/"><i class="fa fa-cogs fa-2x" aria-hidden="true"></i><h4>Workshop</h4></a></td></tr>
-<!-- <tr>
-<td id="btn6" class = "menu"></td>
-
-<td id="btn7" class = "menu"><a href="ca.html"><i class="fa fa-user-secret fa-2x" aria-hidden="true"></i><h4>Campus Ambassador</h4></a></td>
-</tr> -->
-</table>
-<table class = "navmob">
-<tr>
-	<td id="btn1"><a href="about.html"><i class="fa fa-globe fa-2x" aria-hidden="true"></i><h4>About Us</h4></a></td></tr>
-<tr>	<td id="btn2"><a href="sponsor.html"><i class="fa fa-flag-checkered fa-2x" aria-hidden="true"></i><h4>Why Sponsor Us</h4></a></td></tr>
-<tr>	<td id="btn3"><a href="speakers.html"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i><h4>Past Speakers</h4></a></td></tr>
-<tr>	<td id="btn4"><a href="nites.html"><i class="fa fa-fire fa-2x" aria-hidden="true"></i><h4>Aurora Nites</h4></a></td></tr>
-<tr>	<td id="btn5"><a href="exhibits.html"><i class="fa fa-cubes fa-2x" aria-hidden="true"></i><h4>Exhibits</h4></a></td></tr>
-<tr>	<td id="btn6"><a href="team.html"><i class="fa fa-users fa-2x" aria-hidden="true"></i><h4>Team</h4></a></td></tr>
-
-</table>
-
-
-</div>
-</div>
-</div>
-
-
-<script>
-	$(window).load(function(){
-  $(".demo-3").fadeIn("slow");
-});
-</script>
-
-
-
-<style type="text/css">
-	
-a { color: inherit; }
-a:hover { color: inherit; } 
-
-	.demo-3
-	{
-		display: none;
-	}
-
-	.imgs
-	{
-		text-align: center;
-	}
-
-	.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.7);
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: rgba(0,0,0,0.5);
-    margin: 5% auto; /* 15% from the top and centered */
-    padding: 15px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    text-align: center;
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-	.menu
-	{
-		color : rgba(255,255,255,0.7);
-			transition: color 0.7s;
-			-webkit-transform: translateY(12px);
-    -moz-transform: translateY(12px);
-    -ms-transform: translateY(12px);
-    -o-transform: translateY(12px);
-    transform: translateY(12px);
-    -webkit-transition: -webkit-transform 0.3s 0.1s;
-    -moz-transition: -moz-transform 0.3s 0.1s;
-    transition: transform 0.3s 0.1s;
-	}
-
-	.menu:hover
-	{
-		cursor: pointer;
-		color: #071F2A;
-			transition: color 0.7s;
-			-webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: opacity 0.3s 0.1s, -webkit-transform 0.3s 0.1s;
-    -moz-transition: opacity 0.3s 0.1s, -moz-transform 0.3s 0.1s;
-    transition: opacity 0.3s 0.1s, transform 0.3s 0.1s;
-		
-	}
-
-
-	body
-	{
-		background: url("{% static 'img/background.jpg' %}") no-repeat center center fixed;
-		background-size: cover;
-		 -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-		color: white;
-		font-family: 'Raleway', sans-serif;
-	}
-
-	.logo
-	{
-		position: fixed;
-		top : calc(35%);
-		left : calc(50% - 4.8em);
-		width: 12em;
-		
-	}
-	.logotext
-	{
-		position: fixed;
-		top : calc(50% + 2em);
-		left : calc(50% - 12.5em);
-		width : 25em;
-	}
-	.bits
-	{
-		position: fixed;
-		top : calc(20% - 80px);
-		left : calc(50% - 60px);
-		height : 120px;
-	}
-	.bitskk
-	{	
-		position: relative;
-		background: black;
-		top : calc(30%);
-		text-align: center;
-
-	}
-	.text
-	{
-		top : 20%;
-		text-align:center;
-	}
-
-	.nav
-	{	
-		position:fixed;
-		top: 20%;
-		text-align: center;
-		width: 20%;
-	}
-
-	.navright
-	{
-		right:5%;
-	}
-
-	.navleft
-	{
-		left: 5%;
-	}
-	
-	.nav td
-	{
-		width:16.66%;
-	}
-
-	.nav tr
-	{
-		height: 100px;
-	}
-
-	.navmob
-	{
-		width: 100%;
-		text-align: center;
-		display: none;
-	}
-
-	.navmod td
-	{
-		width: 100%;
-	}
-</style>
-
-
-<script src="{% static 'js/TweenLite.min.js' %}"></script>
-        <script src="{% static 'js/EasePack.min.js' %}"></script>
-        <script src="{% static 'js/rAF.js' %}"></script>
-        <script src="{% static 'js/demo-3.js' %}"></script>
-<script type="text/javascript">
-	var dir = "img/";
-var fileextension = ".jpg";
-$.ajax({
-    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-    url: dir,
-    success: function (data) {
-        //List all .png file names in the page
-        $(data).find("a:contains(" + fileextension + ")").each(function () {
-            var filename = this.href.replace(window.location.host, "").replace("http://", "");
-            $("body").append("<img src='" + dir + filename + "'>");
-        });
-    }
-});
-
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
-if( isMobile.any() ){
-	$('canvas').css("display","none");
-	// canvas.css("display","none");
-}
-</script>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="page-feedback">
+        <div class="page-feedback-wrapper">
+        </div>
+    </div>
+    <div class="page" id="page-accomodation">
+        <div class="accomodationcontainer">
+            <div id="accomodationheading1container">
+                <h1>Your <span>Accomodation</span></h1>
+            </div>
+            <div id="accomodationheading4container">
+                <h4>We understand your need for decent accommodation. Our team constantly strives to make your stay comfortable. Hope to see you at QUARK 2017 and will be more than happy if you would be a part of it.</h4>
+                    <p class="accomodation-content-1">
+                        Limited accommodation is available for 1000/- for 3 Nights and 1300/- for 4 nights per person. 3 day accommodation is from 5<sup>th</sup> afternoon/evening till 8<sup>th</sup> Morning. 4 day accommodation is from 4<sup>th</sup> afternoon/evening till 8<sup>th</sup> Morning. If a participant is paying for accommodation, then he/she doesn’t need to pay for events/nights; it is included.
+                    </p>
+                </div>
+                <hr>
+                <br>
+                <div class="accomodationparagraphcontainer">
+                    <h4 id="generalinstructions">General Instructions</h4>
+                    <p class="accomodation-content">
+                        1. Accommodation may be provided in the campus or off campus from 5:00 pm on 5th FEB 2017. You are required to vacate the room on or before 9th FEB 12:00pm .
+                        <br>
+                        <br> 2. Accommodation will be provided on sharing basis in common rooms/dormitories.
+                        <br>
+                        <br> 3. Food is not included in the accommodation fee. We have cafeteria and food stalls serving a variety of cuisines, from which you can choose.
+                        <br>
+                        <br> 4. We will be providing mattresses, buckets and mugs only. Locks, blankets and other things (which you may require) should be brought by participants themselves.
+                        <br>
+                        <br> 5. Students who are accommodated in campus should return to campus by 10:30 PM at any circumstances. No one is allowed to enter campus after 10:30 PM
+                        <br>
+                        <br> 6. QUARK team will not take any responsibility of any theft or mishaps. So participants are requested to take care of their belongings.
+                        <br>
+                        <br> 7. Alcohol, cigarettes, drugs, sharp objects and explosives of any kind are strictly prohibited inside the campus. The decision of security team will be final in case of any disputes.
+                        <br>
+                        <br> 8. Participants who are found drunk will not be allowed to enter the campus.
+                        <br>
+                        <br> 9. Male participants/visitors are not allowed to enter girl’s hostels (CH-4 &CH-5) and Female participants/visitors should not enter boy’s hostels.
+                        <br>
+                        <br> 10. Participants are not allowed to lock the common rooms, as they will be sharing the room with other participants.
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                <div class="accomodationparagraph2container">
+                    <h4 id="somemoreinstructions">Further Instructions to Follow during the Fest</h4>
+                    <p class="accomodation-content-2">
+                        1. There will be a routine checkup of the luggage of the participants at the gate and the participants should collect ’Registration Pass’ from the Surveillance department before coming to the accommodation desk.
+                        <br>
+                        <br> 2. At the accommodation desk, you will be given accommodation slips necessary to be allowed into the common rooms.
+                        <br>
+                        <br> 3. All students must carry their valid college photo ID card and should be shown on request during the registration procedure.
+                        <br>
+                        <br> 4. Random checks would be made to avoid any illegal stay in the campus. Any team failing to show their receipts of accommodation would be fined heavily and disqualified.
+                        <br>
+                        <br> 5. Smoking, Gambling, Alcohol consumption, use of drugs and other illegal substances is strictly prohibited.
+                        <br>
+                        <br> 6. No outside vehicles will be allowed into the campus during the QUARK-2017.
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /pages-stack -->
+    <button class="menu-button"><span>Menu</span></button>
+    <script src="{% static 'js/jquery-3.0.0.js' %}"></script>
+    <script src="{% static 'js/classie.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEJOHzCYHfvoLgMv-dMJW87vlY1ndv7PA&callback=initMap" type="text/javascript"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
+
 </html>
