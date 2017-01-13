@@ -55,3 +55,6 @@ def FillProfile(request):
 
 def Dashboard(request):
 	return render(request, "dashboard.html")
+
+def pay(request):
+	return render(request, "back_payment.html")
