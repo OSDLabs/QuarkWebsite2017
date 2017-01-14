@@ -1,0 +1,665 @@
+.active {
+    background-color: #111 !important;
+    color: #FFF !important;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-box-shadow: 0px 0px 2px #FAFAFA;
+    box-shadow: 0px 0px 2px #FAFAFA;
+}
+
+.to-be-active {
+    background-color: #333 !important;
+    color: #FFF !important;
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.01);
+    -webkit-box-shadow: 0px 0px 1px #FAFAFA;
+    box-shadow: 0px 0px 1px #FAFAFA;
+}
+
+
+/* TOP PART */
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #222;
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+hr {
+    position: fixed;
+    width: 94.9%;
+    left: 2.5%;
+}
+
+#events-heading h3 {
+    font-family: 'Work Sans';
+    line-height: 36px;
+    position: relative;
+    top: 50%;
+    background-color: #222;
+    width: 74px;
+    padding: 3px 7px;
+    border: 2px solid white;
+    color: whitesmoke;
+}
+
+#events-heading {
+    position: relative;
+    top: -1vh;
+    left: 46.5vw;
+    z-index: 2;
+    -webkit-transition: .3s;
+    transition: .3s;
+    width: 6.7vw;
+}
+
+#events-heading:hover {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px 1px #6A6A6A;
+    z-index: 10;
+}
+
+
+/* EVENT WRAAAAAAAAAAAAPPPEEEEEEEEERRRRRRRRSS */
+
+.wrapper {
+    height: 75vh;
+    width: 95%;
+    position: absolute;
+    top: 4.3vh;
+    left: 2.5%;
+    background-color: tomato;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 
+
+#corporate {
+    background: #C247FF;
+}
+
+#specials {
+    background: #7B47FF;
+}
+
+#bitsmun {
+    background: #4847FF;
+}
+
+#cubing {
+    background: #4788FF;
+}
+
+#matka {
+    background: #47BBFF;
+}
+
+#elixir {
+    background: olivedrab;
+}
+
+#electrify {
+    background: seagreen;
+}
+
+#programmersinc {
+    background: gold;
+}
+
+#initiatives {
+    background: orange;
+}
+
+#roboficial {
+    background: #FF6347;
+}
+
+#designandbuild {
+    background: #FF4B47;
+}
+
+ */
+
+#corporate {
+    background: url(../img/wallpapers/corporate.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#specials {
+    background: url(../img/wallpapers/specials.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+
+/* #bitsmun {
+    background: url(../img/wallpapers/bitsmun.jpg);
+} */
+
+
+/* #cubing {
+    background: url(../img/wallpapers/);
+} */
+
+
+/* #matka {
+    background: url(../img/wallpapers/);
+}
+ */
+
+#elixir {
+    background: url(../img/wallpapers/elixir.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#electrify {
+    background: url(../img/wallpapers/electrify.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#programmersinc {
+    background: url(../img/wallpapers/programmersinc.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#initiatives {
+    background: url(../img/wallpapers/initiatives.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#roboficial {
+    background: url(../img/wallpapers/roboficial.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#designandbuild {
+    background: url(../img/wallpapers/designandbuild.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+
+/* EVENT SUB WRAPPERS*/
+
+.left-subwrapper {
+    height: 60vh;
+    width: 22%;
+    background-color: transparent;
+    position: absolute;
+    top: 7vh;
+    left: 3vw;
+}
+
+
+/* SUB EVENT LIST IN LEFT SUB WRAPPER*/
+
+ul.sub-events li:hover,
+.to-be-active {
+    background-color: #222 !important;
+    color: #FFF !important;
+    -webkit-box-shadow: 0px 0px 1px #FAFAFA;
+    box-shadow: 0px 0px 1px #FAFAFA;
+}
+
+ul.sub-events li {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: 'Open Sans';
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #FFF;
+}
+
+
+/*EVENTS HAVING 4 SUBEVENTS*/
+
+
+/* 
+#specials ul.sub-events li {
+    height: 12vh;
+    line-height: 12vh;
+}
+ */
+
+
+/*EVENTS HAVING 5 SUBEVENTS*/
+
+#electrify ul.sub-events li,
+#designandbuild ul.sub-events li,
+#initiatives ul.sub-events li,
+#roboficial ul.sub-events li,
+#specials ul.sub-events li {
+    height: 12vh;
+    line-height: 12vh;
+}
+
+
+/*EVENTS HAVING 6 SUBEVENTS*/
+
+#corporate ul.sub-events li,
+#programmersinc ul.sub-events li {
+    height: 10vh;
+    line-height: 10vh;
+}
+
+
+/*EVENTS HAVING 7 SUBEVENTS*/
+
+#elixir ul.sub-events li {
+    height: 8.57vh;
+    line-height: 8.57vh;
+}
+
+ul.sub-events li:nth-child(2),
+ul.sub-events li:nth-child(3). ul.sub-events li:nth-child(3),
+ul.sub-events li:nth-child(5) {
+    height: 12vh;
+    line-height: 12vh;
+}
+
+.middle-subwrapper {
+    height: 60vh;
+    width: 69.6%;
+    position: absolute;
+    top: 7vh;
+    left: 26vw;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.image-holder {
+    height: 60vh;
+    width: 27%;
+    position: absolute;
+    top: 7vh;
+    left: 66.5vw;
+    background-color: rgba(34, 34, 34, 0.4);
+    opacity: 0.3;
+    display: none;
+}
+
+.middle-subwrapper h4 {
+    font-family: 'Work Sans';
+    text-shadow: 0 1px 1px #000;
+    text-align: center;
+}
+
+
+/* BOTTOM NAVIGATION BAR*/
+
+ul.events-navbar {
+    list-style-type: none;
+    position: fixed;
+    top: 79vh;
+    left: 2.5%;
+    margin: 0 0;
+    width: 95%;
+    min-width: 1297px;
+    z-index: 2;
+    display: flex;
+}
+
+ul.events-navbar li {
+    display: inline-block;
+    height: 100px;
+    width: 7.11%;
+    margin: 0 -2px;
+    flex-basis: 10vw;
+}
+
+.event-icon {
+    position: relative;
+    top: 1vh;
+    left: 0%;
+    color: #EEE;
+}
+
+.event-name {
+    position: relative;
+    top: 3vh;
+    left: 0%;
+    font-family: 'Open Sans';
+    color: #DDD;
+    font-size: 13px;
+}
+
+.tile-wrap {
+    margin: 0 auto;
+    /*  box-shadow: 0px 0px 10px 2px #464646;*/
+    background: #F9FFFF;
+    padding: 0;
+    width: 100%;
+}
+
+.tile {
+    background: #111;
+    list-style: none;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 0;
+    padding: 13px;
+}
+
+.tile:hover {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px 1px #6A6A6A;
+    z-index: 10;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.event1 img {
+    height: 44px;
+    width: 74px;
+}
+
+.event2 img {
+    height: 44px;
+    width: 44px;
+}
+
+.event3 img {
+    height: 44px;
+    width: 33px;
+}
+
+.event4 img {
+    height: 44px;
+    width: 38px;
+    position: relative;
+    top: -2px;
+}
+
+.event5 img {
+    height: 44px;
+    width: 44px;
+}
+
+.event6 img {
+    height: 44px;
+    width: 44px;
+}
+
+.event7 img {
+    height: 44px;
+    width: 60px;
+}
+
+.event8 img {
+    height: 44px;
+    width: 44px;
+}
+
+.event9 img {
+    height: 44px;
+    width: 44px;
+}
+
+.event10 img {
+    height: 44px;
+    width: 44px;
+}
+
+
+/* PARAGRAPH CONTAINER */
+
+.paragraph-container {
+    position: relative;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: Helvetica;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* THREE EVENTS WHICH HAVE TOTALLY DIFFERENT STRUCTURE */
+
+
+/* cubing */
+
+#cubing {
+    background: url(../img/pics/cubing/Cubing.jpg);
+    /* -webkit-background-size: cover; */
+    /* background-size: cover; */
+    background-position: -127vw 46%;
+}
+
+#cubing .middle-subwrapper,
+#bitsmun .middle-subwrapper {
+    height: 60vh;
+    width: 60%;
+    position: absolute;
+    top: 7vh;
+    left: 20vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* matka */
+
+#matka .middle-subwrapper {
+    height: 60vh;
+    width: 60%;
+    position: absolute;
+    top: 7vh;
+    left: 20vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#matka .left-subwrapper {
+    height: 75vh;
+    width: 47.5vw;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#matka .right-subwrapper {
+    height: 75vh;
+    width: 47.5vw;
+    position: absolute;
+    top: 0vh;
+    left: 47.5vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#matka .left-subwrapper img,
+#matka .right-subwrapper img {
+    height: 100%;
+    width: 140%;
+}
+
+#matka .left-subwrapper img {
+    height: 100%;
+    position: absolute;
+    width: 140%;
+    left: -9vw;
+}
+
+.middle-subwrapper p {
+    font-size: 16px;
+    line-height: 1.7em;
+}
+
+
+/* bitsmun */
+
+#bitsmun {
+    background: url(../img/pics/bitsmun/bitsmun.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -10vh;
+}
+
+#bitsmun-logo {
+    height: 25vh;
+    width: 20vw;
+    position: relative;
+    top: -1vh;
+}
+
+
+/* RULEBOOK BUTTONS */
+
+.rulebook-container {
+    position: relative;
+    top: 20vh;
+    left: 26vw;
+}
+
+button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    margin: 0;
+    padding: 15px 70px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    overflow: hidden;
+    transition: 500ms ease all;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: 110%;
+    width: 30px;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(20deg);
+}
+
+button:hover {
+    background: rgba(0, 109, 54, 0.7);
+}
+
+button:hover:before {
+    right: -50%;
+    transition: 1s ease all;
+}
+
+#cubing .rulebook-container {
+    position: absolute;
+    top: 50vh;
+}
+
+button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* FRONT PAGE - EVENTS */
+
+#front {
+    background: url(../img/wallpapers/events.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.quark-composite-logo-container {
+    position: relative;
+    height: 50vh;
+    width: 37vw;
+    left: 29%;
+    top: 10vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    margin: 0 10px;
+}
+
+.quark-composite-logo-container img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(90%);
+
+}
+
+.register-container {
+    position: relative;
+    left: 45vw;
+}
+
+#front a {
+    color: white;
+    text-decoration: none;
+}
+
+#front a{
+    font-family: 'Open Sans';
+    text-shadow: 0 0 2px #000;
+}
+
+#front a p{
+    margin: -6px;
+}
