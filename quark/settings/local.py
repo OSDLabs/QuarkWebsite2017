@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     'panel',
     'events',
     'sponsor',
+    'quickreg',
 )
 
 MIDDLEWARE_CLASSES = (
