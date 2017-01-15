@@ -3,10 +3,9 @@ from .forms import *
 from .models import *
 
 def quickreg(request):
-	form = QuickForm()
+	form = QuickForm(request.POST or None)
 	if request.method == 'POST':
 		if form.is_valid():
-			form = QuickForm(request.POST)
 			print(request.POST.get('name'))
 			obj = quick(
 				name = request.POST.get('name'),
@@ -26,6 +25,7 @@ def quickreg(request):
 				workshop = str(request.POST.getlist('workshop'))
 				)
 			obj.save()
+			print(obj)
 			print('Success')
 			return redirect('home')
 
