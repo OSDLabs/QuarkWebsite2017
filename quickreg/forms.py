@@ -1,6 +1,25 @@
 from django import forms
 from .models import *
 
+GENDER_CHOICES = (
+    (u'M',u'Male'),
+    (u'F',u'Female'),
+    (u'N',u"Don't wish to reveal")
+    )
+
+YEAR_CHOICES = (
+    (u'U1',u'Undergraduate 1st year'),
+    (u'U2',u'Undergraduate 2nd year'),
+    (u'U3',u'Undergraduate 3rd year'),
+    (u'U4',u'Undergraduate 4th year'),
+    (u'P1',u'Postgraduate 1st year'),
+    (u'P2',u'Postgraduate 2nd year'),
+    (u'SS',u'Schooling'),
+    (u'PH',u'PhD.'),
+    )
+
+
+
 PANEL_DES = (
     (u'Burnout',u'Burnout'),
     (u'Mortar Kombat',u'Mortar Kombat'),
@@ -96,8 +115,8 @@ class QuickForm(forms.Form):
     email = forms.EmailField()
     mobile = forms.CharField()
     institute = forms.CharField()
-    gender = forms.CharField()
-    year = forms.CharField()
+    gender = forms.ChoiceField(choices=GENDER_CHOICES)
+    year = forms.ChoiceField(choices=YEAR_CHOICES)
     panel_des = forms.MultipleChoiceField(
         required=False,
         widget=forms.CheckboxSelectMultiple,
