@@ -1,0 +1,559 @@
+
+/*Contact Us*/
+
+body.menu-active .container {
+    transform: scale(0.9);
+}
+
+.container .inner {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.nav {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    padding: 0 25px;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.nav a {
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    font-size: 30px;
+    padding: 0 25px;
+    color: #212121;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.32s ease;
+}
+
+body:not(.menu-active) .nav a.menu-activator:hover {
+    transform: rotate(90deg);
+}
+
+body.menu-active .nav a.menu-activator {
+    transform: rotate(90deg);
+}
+
+.nav a.white {
+    color: #FAFAFA;
+}
+
+body.menu-active .nav a.white {
+    color: #212121;
+    transition: all 0.15s ease;
+}
+
+.nav a.link {
+    float: right;
+    position: relative;
+    text-align: center;
+}
+
+.nav a.link i {
+    position: absolute;
+    display: block;
+    transform: translateX(-50%);
+    transition: all 0.32s ease;
+}
+
+.nav a.link i.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav a.link:hover i {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav a.link:hover i.hidden {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav i.ion-cube {
+    display: inline-block;
+    position: absolute;
+    height: 75px;
+    line-height: 75px;
+    font-size: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container .inner .panel {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 60%;
+    float: left;
+    transform: skew(-20deg);
+}
+
+.container .inner .panel.panel-left {
+    margin-left: -10%;
+}
+
+.container .inner .panel .panel-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) skew(20deg);
+}
+
+.container .inner .panel.panel-left .panel-content .image-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    opacity: 0.95;
+    background-image: url('http://uplusion23.net/images/RickGenestSm.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.container .inner .panel.panel-right {
+    margin-right: -10%;
+    background: #1B1B1B;
+}
+
+.container .inner .panel.panel-right .panel-content .form {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    width: 300px;
+    min-height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%);
+}
+
+.container .inner .panel.panel-right .panel-content .form h1 {
+    display: block;
+    margin: 0 0 45px 0;
+    color: #B1B1B1;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+input {
+    font-size: 13px;
+    height: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #B1B1B1;
+    color: #B1B1B1;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0.5;
+    transition: 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    opacity: 1;
+}
+
+label {
+    color: #B1B1B1;
+    font-size: 13px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 15px;
+    opacity: 0.5;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+
+/* active state */
+
+input:focus label,
+input:valid label {
+    top: -10px;
+    font-size: 12px;
+    color: #B1B1B1;
+    opacity: 1;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/* active state */
+
+input:focus .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+
+/* ANIMATIONS ================ */
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #B1B1B1;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #B1B1B1;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #B1B1B1;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+a.send-btn {
+    float: right;
+    color: #B1B1B1;
+    transition: 0.2s ease;
+}
+
+a.send-btn:hover {
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.33s ease;
+}
+
+.menu::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(240, 240, 240, 0.0);
+    transition: all 0.45s ease;
+}
+
+body.menu-active .menu {
+    left: 0;
+}
+
+body.menu-active .menu::before {
+    background: rgba(240, 240, 240, 0.9);
+}
+
+
+/* /Contact Us*/
+
+
+/* About US */
+
+#page-about-us {
+    background-image: url(../img/aboutus.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.aboutuscontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#aboutusheading1container h1 {
+    font-size: 28px;
+    font-family: 'Graduate';
+    text-shadow: 0px 0px 1px #000;
+    color: #444;
+}
+
+#aboutusheading1container h1 span {
+    display: inline-block;
+    color: seagreen;
+}
+
+#aboutusheading4container h4 {
+    color: chocolate;
+}
+
+#aboutusparagraphcontainer {
+    width: 70vw;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+#aboutusparagraphcontainer p {
+    font-size: 16px;
+    color: #DDD;
+    line-height: 1.5em;
+}
+
+#aboutusparagraphcontainer:hover {
+    color: EEE;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* REACH BITS */
+
+.page-reach-wrapper {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/wallpaper5.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.reachbitscontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#reachbitsheading1container h1 {
+    font-size: 28px;
+    font-family: 'Graduate';
+    text-shadow: 0px 0px 1px #000;
+    color: #DDD;
+}
+
+#reachbitsheading1container h1 span {
+    display: inline-block;
+    color: seagreen;
+}
+
+#page-reach h3 {
+    font-family: 'Oxygen';
+}
+
+.map-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/* #map-canvas {
+    height: 70vh;
+    width: 80vw;
+    padding: 0;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 2px whitesmoke;
+} */
+
+.map1-container, .map2-container{
+    position: relative;
+    height: 53vh;
+    width: 38vw;
+    padding: 0;
+    margin: 15px auto;
+    border: 3px solid transparent;
+    -webkit-box-shadow: 0 0 3px grey;
+    box-shadow: 0 0 3px grey;
+}
+
+
+iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.reachbitsfromplane, .reachbitsfromtrain{
+    text-align: center;
+    flex-basis: 50%;
+    padding: 15px 5px;
+}
+
+/* FEEDBACK */
+
+.page-feedback-wrapper {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/wallpaper1.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ACCOMODATION */
+
+#page-accomodation {
+    background-image: url('../img/wallpaper1.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.accomodationcontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#accomodationheading1container h1 {
+    font-size: 28px;
+    font-family: 'Graduate';
+    text-shadow: 0px 0px 1px #000;
+    color: #DDD;
+}
+
+#accomodationheading1container h1 span {
+    display: inline-block;
+    color: seagreen;
+}
+
+#accomodationheading4container h4 {
+    color: chocolate;
+    font-size: 14px;
+}
+
+.accomodationparagraphcontainer {
+    width: 54vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 30px 0px 30px;
+    position: relative;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 5px;
+    transition: all 0.3s;
+    height: 63vh;
+    left: -3vw;
+}
+
+#generalinstructions {
+    text-align: center;
+    color: silver;
+    margin: 0;
+}
+
+.accomodationparagraphcontainer p {
+    color: #DDD;
+    text-align: left;
+    font-size: 0.75em;
+    width: 100%;
+}
+
+.accomodationparagraphcontainer:hover {
+    color: EEE;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+    z-index: 1;
+}
+
+.accomodation-content-1 {
+    font-size: 14px;
+}
+
+.accomodationparagraph2container {
+    width: 30vw;
+    position: absolute;
+    float: right;
+    top: 34vh;
+    left: 61.7vw;
+    height: 57.2vh;
+    overflow: hidden;
+    background: rgba(202, 35, 5, 0.9);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accomodationparagraph2container:hover {
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+    background: rgb(202, 35, 5);
+}
+
+.accomodation-content-2 {
+    font-size: 0.80em;
+    color: #DDD;
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+}
+
+#somemoreinstructions {
+    text-align: center;
+    color: #EEE;
+}

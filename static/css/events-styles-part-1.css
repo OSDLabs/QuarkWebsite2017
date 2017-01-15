@@ -1,0 +1,229 @@
+.active {
+    background-color: #111 !important;
+    color: #FFF !important;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-box-shadow: 0px 0px 2px #FAFAFA;
+    box-shadow: 0px 0px 2px #FAFAFA;
+}
+
+.to-be-active {
+    background-color: #333 !important;
+    color: #FFF !important;
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.01);
+    -webkit-box-shadow: 0px 0px 1px #FAFAFA;
+    box-shadow: 0px 0px 1px #FAFAFA;
+}
+
+
+/* TOP PART */
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #222;
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+hr {
+    position: fixed;
+    width: 94.9%;
+    left: 2.5%;
+}
+
+#events-heading h3 {
+    font-family: 'Work Sans';
+    line-height: 36px;
+    position: relative;
+    top: 50%;
+    background-color: #222;
+    width: 74px;
+    padding: 3px 7px;
+    border: 2px solid white;
+    color: whitesmoke;
+}
+
+#events-heading {
+    position: relative;
+    top: -1vh;
+    left: 46.5vw;
+    z-index: 2;
+    -webkit-transition: .3s;
+    transition: .3s;
+    width: 6.7vw;
+}
+
+#events-heading:hover {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px 1px #6A6A6A;
+    z-index: 10;
+}
+
+
+/* EVENT WRAAAAAAAAAAAAPPPEEEEEEEEERRRRRRRRSS */
+
+.wrapper {
+    height: 75vh;
+    width: 95%;
+    position: absolute;
+    top: 4.3vh;
+    left: 2.5%;
+    background-color: tomato;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 
+
+#corporate {
+    background: #C247FF;
+}
+
+#specials {
+    background: #7B47FF;
+}
+
+#bitsmun {
+    background: #4847FF;
+}
+
+#cubing {
+    background: #4788FF;
+}
+
+#matka {
+    background: #47BBFF;
+}
+
+#elixir {
+    background: olivedrab;
+}
+
+#electrify {
+    background: seagreen;
+}
+
+#programmersinc {
+    background: gold;
+}
+
+#initiatives {
+    background: orange;
+}
+
+#roboficial {
+    background: #FF6347;
+}
+
+#designandbuild {
+    background: #FF4B47;
+}
+
+ */
+
+#corporate {
+    background: url(../img/wallpapers/corporate.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#specials {
+    background: url(../img/wallpapers/specials.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+
+/* #bitsmun {
+    background: url(../img/wallpapers/bitsmun.jpg);
+} */
+
+
+/* #cubing {
+    background: url(../img/wallpapers/);
+} */
+
+
+/* #matka {
+    background: url(../img/wallpapers/);
+}
+ */
+
+#elixir {
+    background: url(../img/wallpapers/elixir.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#electrify {
+    background: url(../img/wallpapers/electrify.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#programmersinc {
+    background: url(../img/wallpapers/programmersinc.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#initiatives {
+    background: url(../img/wallpapers/initiatives.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#roboficial {
+    background: url(../img/wallpapers/roboficial.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+#designandbuild {
+    background: url(../img/wallpapers/designandbuild.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vw -18vh;
+}
+
+
+/* EVENT SUB WRAPPERS*/
+
+.left-subwrapper {
+    height: 60vh;
+    width: 22%;
+    background-color: transparent;
+    position: absolute;
+    top: 7vh;
+    left: 3vw;
+}
