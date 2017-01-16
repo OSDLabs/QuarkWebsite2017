@@ -89,12 +89,12 @@ PANEL_CORPORATE = (
     )
 
 WORKSHOP = (
-    (u'NVIDIA - Deep Learning',u'Deep Learning'),
-    (u'AUTODESK - Product Design using Fusion 360',u'Fusion 360'),
-    (u'MathWorks - App Development',u'App Development'),
-    (u'Texas Instruments - Webench',u'Webench'),
-    (u'Zerodha, Bajaj - Financial Workshop',u'Financial Workshop'),
-    (u'CISCO - Networking Workshop ',u'Networking'),
+    (u'Deep Learning', u'NVIDIA - Deep Learning'),
+    (u'Fusion 360', u'AUTODESK - Product Design using Fusion 360'),
+    (u'App Development', u'MathWorks - App Development'),
+    (u'Webench', u'Texas Instruments - Webench'),
+    (u'Financial Workshop', u'Zerodha, Bajaj - Financial Workshop'),
+    (u'Networking', u'CISCO - Networking Workshop '),
     )
 
 class QuickForm(forms.Form):

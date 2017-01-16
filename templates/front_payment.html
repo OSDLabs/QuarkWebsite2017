@@ -21,19 +21,20 @@
             <div class="card-content white-text">
 <div class="row">
 <div class="col-sm-12">
-<img src="{% static 'img/quark_logo.png' %}" alt="" id="quark17" style="height: 20vh">
+ <img src="{% static 'img/quark_logo.png' %}" alt="" id="quark17" style="height: 20vh">
 </div>
 <h1>Quick Registration Form</h1>
 <span class="card-title">Quick Registration Form</span>
 <div class="row">
 <div class="col-sm-8 col-sm-offset-2">
-<p class="desc">Sabre presents Quark 2017.</p>
+<p class="desc">Your registration is <b>successful</b>, please proceed for payments</p>
 </div>
-<div class="col-sm-6 col-sm-offset-3">
+<div class="col-sm-10 col-sm-offset-1">
 <form method = 'POST' enctype="multipart/form-data">
 {% csrf_token %}
-{{ form|crispy }}
-<input class="btn btn-primary" type="submit">
+<iframe src="/static/payment.pdf" style="width:100%; height:60vh;" frameborder="0"></iframe>
+<br><br>
+<a target = "_blank" href="https://www.onlinesbi.com/prelogin/icollecthome.htm">https://www.onlinesbi.com/prelogin/icollecthome.htm</a>
 </form>
 </div>
 </div>

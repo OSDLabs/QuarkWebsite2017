@@ -27,9 +27,15 @@ def quickreg(request):
 			obj.save()
 			print(obj)
 			print('Success')
-			return redirect('home')
+			return redirect('payment')
 
 	context = {
 		'form' : form,
 	}
 	return render(request, 'quick_reg.html', context)
+
+def payment(request):
+	context = {
+
+	}
+	return render(request, 'front_payment.html', context)

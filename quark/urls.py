@@ -29,6 +29,7 @@ urlpatterns = [
 
     url(r'^sponsors/$', 'sponsor.views.sponsors', name='contact'),
     url(r'^quick-reg/$', 'quickreg.views.quickreg', name='quickreg'),
+    url(r'^payment/$', 'quickreg.views.payment', name='payment'),
 
     # url(r'^blog/', include('blog.urls')),
 
