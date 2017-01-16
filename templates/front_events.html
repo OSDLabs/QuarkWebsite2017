@@ -18,7 +18,7 @@
 
 <body>
     <!-- PRELOADER -->
-   <!--  <div class="loading-container">
+    <div class="loading-container">
         <div class="loading">
             <div class="finger finger-1">
                 <div class="finger-item">
@@ -44,7 +44,7 @@
                 <div class="last-finger-item"><i></i></div>
             </div>
         </div>
-    </div> -->
+    </div>
      <!-- PRELOADER -->
     <hr>
     <div id="events-heading">
@@ -530,6 +530,30 @@
         </li>
     </ul>
     <script src="{% static 'js\jquery-3.0.0.js' %}"></script>
+    <script>
+    $(document).ready(function() {
+
+        // Preloader
+        $(window).on('load', function() {
+
+            setTimeout(function() {
+
+                var preloaderFadeOutTime = 500;
+
+                function hidePreloader() {
+                    var preloader = $('.loading-container');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                    // preloader.children().find('.loading').css('z-index', '-999999999999');
+                    // preloader.css('z-index', '-999999999999999');
+                }
+                hidePreloader();
+
+            }, 5000);
+
+        });
+
+    });
+    </script>
     <script src="{% static 'js\script 2.js' %}"></script>
 </body>
 
