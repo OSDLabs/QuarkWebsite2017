@@ -466,10 +466,10 @@ HOME PAGE
 
 .quark17-container {
     position: relative;
-    height: 40vh;
-    width: 30vw;
-    left: 42%;
-    top: -19vh;
+    height: 24vh;
+    width: 20vw;
+    left: 47%;
+    top: -14vh;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -498,7 +498,7 @@ HOME PAGE
 
 .navigation-menu-container {
     position: relative;
-    top: -5vh;
+    top: 10vh;
     margin: 0 auto;
     width: 90vw;
 }
