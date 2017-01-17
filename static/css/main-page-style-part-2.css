@@ -315,7 +315,7 @@ HOME PAGE
 
 */
 
-.fullscreen-bg {
+/* .fullscreen-bg {
     position: fixed;
     top: 0;
     right: 0;
@@ -355,10 +355,11 @@ HOME PAGE
         display: none;
     }
 }
-
+ */
 #page-home {
     height: 100vh;
     width: 100%;
+    background: url('../img/firstframe_videobackground2.png');
 }
 
 .wrapper {
