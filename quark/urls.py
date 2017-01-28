@@ -5,6 +5,7 @@ urlpatterns = [
     # Examples:
     url(r'^$', 'home.views.home', name='home'),
     url(r'^speakers/$', 'home.views.speakers', name='speakers'),
+    url(r'^past_speakers/$', 'home.views.past_speakers', name='past_speakers'),
     url(r'^exhibits/$', 'home.views.exhibits', name='exhibits'),
     url(r'^nites/$', 'home.views.nites', name='nites'),
     url(r'^team/$', 'home.views.team', name='team'),

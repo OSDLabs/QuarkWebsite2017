@@ -19,6 +19,10 @@ def speakers(request):
 	context = {}
 	return render(request, "speakers.html", context)
 
+def past_speakers(request):
+	context = {}
+	return render(request, "past_speakers.html", context)
+
 def exhibits(request):
 	context = {}
 	return render(request, "exhibits.html", context)
