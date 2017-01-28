@@ -1,203 +1,405 @@
 {% load staticfiles %}
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Speakers - Quark 2017</title>
-		<meta name="description" content="Past Speakers Quark 2017" />
-		<meta name="keywords" content="quark, past, speakers" />
-		<meta name="author" content="Quark 2017" />
-		<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-<link rel="shortcut icon" href="{% static 'img/5.png' %}">
-
-<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="{% static 'css/animate.css' %}">
-
-
-	
+    <meta charset="UTF-8">
+    <title>Guest Lectures - Q'17</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/f4b819bb8e3dcf620c21806e8036adbf?family=Langdon" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="{% static 'css/guest_lectures_styles.css' %}">
 </head>
 
-<style>
-p,h4{
-font-size:1.2em;
-}
-
-</style>
 <body>
-	<script src="{% static 'js/wow.min.js' %}"></script>
-              <script>
-              new WOW().init();
-              </script>
+    <!-- MAIN CONTAINER -->
+    <div class="main-container">
+        <hr id="upper-hr">
+        <div class="guest-speakers-heading-container">
+            <h3>Guest Lectures</h3>
+        </div>
+        <!-- THE CONTENT -->
+        <div class="content-container">
+            <div class="carousel carousel-slider">
+                <!-- FRONT PAGE -->
+                <div class="page carousel-item red" href="#one!" id="one">
+                    <div class="wrapper">
+                        <h3 class="heading-the">The</h3>
+                        <h1 class="heading-guest">GUEST</h1>
+                        <h1 class="heading-lecture">LECTURE</h1>
+                        <h3 class="heading-series">series</h3>
+                        <div class="quark-logo"><img src="{% static 'img/9xmquark1.png' %}" alt=""></div>
+                        <div class="description">
+                            <div class="row">
+                                <div class="col s8 m0">
+                                    <div class="card black">
+                                        <div class="card-content white-text">
+                                            <p>Expertise is epitome of intellectual brilliance and a passion to reach the zenith. With a renowned line-up of Guest Lectures over the years, Quark has always been a prime platform where the flame of expertise has been effectively transferred to many more torches. The pioneers of diverse fields have graced Quark with their presence, illuminating more and more minds to new areas of interest. Igniting minds since the very inception of Quark, the guest lectures give a taste of a world of knowledge and learning which is much beyond what we have already experienced.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /FRONT PAGE -->
+                <!-- JOEL SPOLSKY -->
+                <div class="page carousel-item green" href="#two!" id="two">
+                    <div class="wrapper-yo white-text">
+                        <div class="col s10 m12">
+                            <h2 class="header">JOEL SPOLSKY</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="{% static 'img/joel-spolsky.jpg' %}" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>Avram Joel Spolsky is a software engineer and writer. He is the author of Joel on Software, a blog on software development, and the creator of the project management software <span class="yellow-text">Trello</span>. He later founded Fog Creek Software in 2000 and launched the Joel on Software blog. In 2008, he launched the <span class="yellow-text">Stack Overflow</span> programmer Q&A site in collaboration with Jeff Atwood. Using the Stack Exchange software product which powers Stack Overflow, the Stack Exchange Network now hosts over 100 Q&A sites.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="www.stackoverflow.com">Stack Overflow</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-info-container">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card red darken-4">
+                                    <div class="card-content white-text">
+                                        <p>Great minds inspire us to do great things. This Quark get inspired by few of the great people of our time. Quark presents the first Guest Speaker, Joel Spolsky, CEO and Co-founder of Stack Overflow. He is also the author of five books, including 'User Interface Design for Programmers' and 'Smart and Gets Things Done'. We invite you all to come and ask out loud all your questions. Be There, Get Inspired!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /JOEL SPOLSKY -->
+                <!-- BALAJI VISHWANATHAN -->
+                <div class="page carousel-item " href="#five!" id="five">
+                    <div class="balaji-viswanathan-container white-text">
+                        <div class="col s10 m12">
+                            <h2 class="header">BALAJI VISWANATHAN</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="{% static 'img/balaji-viswanathan.jpg' %}" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p> Balaji Viswanathan has an answer for any question put in front of him, be it related to technology, politics, international relations and much more. He is an all in one package being a knowledge lover, spiritual seeker, investor, blogger and what not. With an unimaginable 245.7k followers on Quora and 168.2m answer views, he is none other than Balaji Viswanathan, The Most Followed Writer On Quora and also the Vice President of Invento. Be there on 3rd February and get inspired by what he has to say!</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="https://www.quora.com/profile/Balaji-Viswanathan-2" target="_blank">Balaji Viswanathan </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-info-container" id="balaji">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card black darken-1">
+                                    <div class="card-content white-text">
+                                        <p>Balaji Viswanathan is an Indian writer, author, entrepreneur and engineer who presently lives in Bengaluru. He is popularly known for his answers and posts on the question-and-answer site Quora. He has been the top-writer (on Quora) of the year(s) 2013, 2014, 2015 and 2016 with over 20 articles published on Forbes, Slate, Business Insider and other places. He is the author of From Tryst to Tendulkar: The History of Independent India, a book on the history of contemporary India.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /BALAJI VISWANATHAN -->
+                <!-- MEIRA KUMAR -->
+                <div class="page carousel-item yellow" href="#four!" id="four">
+                    <div class="wrapper-yo white-text">
+                        <div class="col s10 m12">
+                            <h2 class="header" id="meira-header">MEIRA KUMAR</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="{% static 'img/meira-kumar.jpg' %}" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>Not many people in present time are as soft spoken and down to earth as our next speaker. You would have surely heard "Aap Baith Jaaiye" a number times during a Lok Sabha session.
+                                            <br>
+                                            <br>Introducing to you all, none other than, Smt. Meira Kumar, first woman Speaker of Lok Sabha(2009-2014). </p>
+                                        <br>
+                                        <p>She also served as a Cabinet Minister in the Ministry of Social Justice and Empowerment of Manmohan Singh's Congress led Government. We invite you all to come and hear from her on 3rd of February. Be there, Get Inspired!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-info-container" id="meira">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card teal darken-4">
+                                    <div class="card-content white-text">
+                                        <p>Meira Kumar is an Indian politician and a five time Member of Parliament. She was elected unopposed as the first woman Speaker of Lok Sabha and served from 2009 to 2014. She is a lawyer and a former diplomat. Prior to being a member of the 15<sup>th</sup> Lok Sabha, she has been elected earlier to the 8<sup>th</sup>, 11<sup>th</sup>, 12<sup>th</sup> and 14<sup>th</sup> Lok Sabha. She served as a Cabinet Minister in the Ministry of Social Justice and Empowerment of Manmohan Singh's Congress led Government (2004–2009).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /MEIRA KUMAR -->
+                <!-- TESSY THOMAS -->
+                <div class="page carousel-item amber" href="#three!" id="three">
+                    <div class="wrapper-yo white-text">
+                        <div class="col s10 m12">
+                            <h2 class="header" id="tessy-header">TESSY THOMAS</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="img/tessy-thomas.jpg" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>Mrs. Thomas has been associate project director of the 3,000 km range Agni-III missile project. She was also the project director for mission Agni IV which was successfully tested in 2011. Tessy was appointed as the Project Director for 5,000 km range Agni-V in 2009 and is based The missile was successfully tested in 2012. PM Manmohan Singh told the Indian Science Congress that Mrs Thomas is an example of a "woman making her mark in a traditionally male bastion and decisively breaking the glass ceiling". Media also calls her "Agniputri".
+                                            <br>
+                                            <br>"We are all proud of our country. Agni-V is one of our greatest achievements," she says.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-info-container" id="tessy">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card orange darken-4">
+                                    <div class="card-content white-text">
+                                        <p>Continuing with our speaker line up, here is our next speaker. You must have surely heard about the successful launch of Missile: Agni V few days ago. Our next speaker has been that genius mind behind it. Presenting to you all, Tessy Thomas. She is famously known as the Missile Woman of India and has played an outstanding role in making India self-reliant in Missile Technology. She is the first woman scientist to head a missile project in India. Be there, get inspired.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /TESSY THOMAS -->
+                <!-- SRIJAN PAL SINGH -->
+                <div class="page carousel-item " href="#seven!" id="seven">
+                    <div class="wrapper-yo white-text">
+                        <div class="col s10 m12">
+                            <h2 class="header">SRIJAN PAL SINGH</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="{% static 'img/srijan-pal-singh.jpg' %}" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>Srijan Pal Singh has worked with Dr A. P. J. Abdul Kalam who served as the 11th President of India, in promoting various assignments such as "What Can I Give Movement", Energy Independence for the nation, nuclear and space missions, and Providing Urban Amenities to Rural Areas.
+                                            <br>
+                                            <br> He has co-authored a bestseller book with Dr. Kalam titled, Target 3 Billion which recommends innovative solutions towards sustainable development of the rural areas of the world. He also co-authored two more books with Dr. Kalam titled "Reignited: Scientific Pathways to a Brighter Future" and "Advantage India: From Challenge to Opportunity".</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-info-container">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card blue darken-4">
+                                    <div class="card-content white-text">
+                                        <p>Dr. APJ Abdul Kalam has been an inspiration for every Indian and our next speaker has been very close to him. Presenting to you, Srijan Pal Singh, former advisor to APJ Abdul Kalam and also co-authored 'Target 3 Billion' with him. In 2014, he co-founded the initiative, Barefoot IT with IT Minister of Karnataka.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /SRIJAN PAL SINGH -->
+                <!-- SUBRAMANIAN SWAMY -->
+                <div class="page carousel-item " href="#six!" id="six">
+                    <div class="wrapper-yo white-text">
+                        <div class="col s10 m12">
+                            <h2 class="header">SUBRAMANIAN SWAMY</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="{% static 'img/subramanian-swamy.jpg' }" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>Subramanian Swamy is a politician and economist who serves as a member of the Rajya Sabha, the upper house of the Indian Parliament. He was the President of the Janata Party until it merged with Bharatiya Janata Party (BJP). Swamy has served as a member of the Planning Commission of India and was a Cabinet Minister in the Chandra Shekhar government.
+                                            <br>He was appointed as Chairman of the Commission on Labour Standards and International Trade. He also serves as chairman of the Board of Governors of the SCMS Group of Educational Institutions in Kerala. He was nominated to Rajya Sabha in 2016. He has also written a lot on foreign affairs of India. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-info-container">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card green darken-4">
+                                    <div class="card-content white-text">
+                                        <p>Presenting to you all, Dr. Subramanian Swamy, Member of Parliament who has also served as the Ex Minister of Law and Justice as well as Ex Minister of Commerce and Industry.
+                                            <br>
+                                            <br>Come and witness him at Quark on 5th of February.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /SUBRAMANIAN SWAMY -->
+                <!-- ABHAS MITRA -->
+                <div class="page carousel-item " href="#eight!" id="eight">
+                    <div class="wrapper-yo white-text">
+                        <div class="col s10 m12">
+                            <h2 class="header">ABHAS MITRA</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="{% static 'img/abhas-mitra.jpg' %}" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>An astrophysicist who best known for his distinct views on several front-line astrophysics concepts, particularly related to black holesand Big Bang cosmology involving the black hole information paradox. Scientific diaspora including Richard A. Muller came into his favour of his claim of resolution of black hole information paradox presented 13 years before Stephen Hawking.
+                                            <br>
+                                            <br> Richard Muller appreciating the claim of Mitra made, remarking: "I think Mitra resolved the paradox before Hawking, and did it in a way that is superior."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-info-container">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card amber darken-4">
+                                    <div class="card-content white-text">
+                                        <p>Existence of black holes is a mystery to physicists even today. Here we present to you all , Abhas Mitra, an Indian astrophysicist who has challenged Stephen Hawking's Theory of existence of Black Holes. He is famously known for having resolved the Black Hole Information paradox. Hear what he has to say on this interesting topic on 3rd of February at QUARK.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /ABHAS MITRA -->
+                <!-- V.S. Sampath -->
+                <div class="page carousel-item " href="#nine!" id="nine">
+                    <div class="wrapper-yo white-text">
+                        <div class="col s10 m12">
+                            <h2 class="header">V.S. Sampath</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="{% static 'img/vs-sampath.jpg' %}" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>V.S. Sampath was the Chief Election Commissioner (CEC) of the Election Commission of India from 2012 to 2015. He retired when he attained 65 years of age. As Chief Election commissioner, Sampath has smoothly conducted the largest electoral exercise in the history of world democracies - Indian general election, 2014-the 14th general elections in India, where 550 million voters out 814 million eligible voters participated and the highest voting percentage was recorded since Indian independence-66.7%.
+                                            <br>
+                                            <br>This election was applauded as the largest electoral exercise in the world, and drew international praise.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-info-container">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card pink darken-4">
+                                    <div class="card-content white-text">
+                                        <p>Great minds inspire us to do great things. This Quark get inspired by few of the great people of our time. Quark presents the first Guest Speaker, Joel Spolsky, CEO and Co-founder of Stack Overflow. He is also the author of five books, including 'User Interface Design for Programmers' and 'Smart and Gets Things Done'. We invite you all to come and ask out loud all your questions. Be There, Get Inspired!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- V.S. Sampath -->
+                <!-- To be Updated -->
+                <div class="page carousel-item " href="#ten!" id="ten">
+                    <div class="wrapper-yo white-text">
+                        <!-- <div class="col s10 m12">
+                            <h2 class="header">V.S. Sampath</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="img/vs-sampath.jpg" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>V.S. Sampath was the Chief Election Commissioner (CEC) of the Election Commission of India from 2012 to 2015. He retired when he attained 65 years of age. As Chief Election commissioner, Sampath has smoothly conducted the largest electoral exercise in the history of world democracies - Indian general election, 2014-the 14th general elections in India, where 550 million voters out 814 million eligible voters participated and the highest voting percentage was recorded since Indian independence-66.7%.
+                                            <br>
+                                            <br>This election was applauded as the largest electoral exercise in the world, and drew international praise.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <h1 class="will-be-updated-soon">Will be updated soon!</h1>
+                    </div>
+                    <!-- <div class="more-info-container">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card pink darken-4">
+                                    <div class="card-content white-text">
+                                        <p>Great minds inspire us to do great things. This Quark get inspired by few of the great people of our time. Quark presents the first Guest Speaker, Joel Spolsky, CEO and Co-founder of Stack Overflow. He is also the author of five books, including 'User Interface Design for Programmers' and 'Smart and Gets Things Done'. We invite you all to come and ask out loud all your questions. Be There, Get Inspired!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- /To be Updated -->
+                <!-- Speaker not released yet -->
+                <div class="page carousel-item " href="#eleven!" id="eleven">
+                    <div class="wrapper-yo white-text">
+                        <!-- <div class="col s10 m12">
+                            <h2 class="header">V.S. Sampath</h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="img/vs-sampath.jpg" alt="">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>V.S. Sampath was the Chief Election Commissioner (CEC) of the Election Commission of India from 2012 to 2015. He retired when he attained 65 years of age. As Chief Election commissioner, Sampath has smoothly conducted the largest electoral exercise in the history of world democracies - Indian general election, 2014-the 14th general elections in India, where 550 million voters out 814 million eligible voters participated and the highest voting percentage was recorded since Indian independence-66.7%.
+                                            <br>
+                                            <br>This election was applauded as the largest electoral exercise in the world, and drew international praise.</p>
+                                    </div>
+                                </div>
+                            </div>
 
-			<h1>GUEST<span class = "colorh1"> LECTURES</span></h1>
-		
-		<div class = 'row'>
-			<h3 style="text-align:center">Quark aims to inspire it's attendees by hosting a plethora of Guest Talks by eminent personalities from all over the world</h3> 
-<br><br>
-<!-- <img src = "bits.jpg" style="width:100%;border:groove"> -->
-<h4 class="titlehead"></h4>
-<p>
-Expertise is epitome of intellectual brilliance and a passion to reach the zenith. With a renowned line-up of Guest Lectures over the years, Quark has always been a prime platform where the flame of expertise has been effectively transferred to many more torches. The pioneers of diverse fields have graced Quark with their presence, illuminating more and more 
-minds to new areas of interest. Igniting minds since the very inception of Quark, the guest lectures give a taste of a world of knowledge and learning which is much beyond what we have already experienced. Quark witnessed enlightening talks by notable speakers, including :  
-<br><br><br>
-
-</p>
-</div>
-
-<div style="overflow-x:auto;">
-<table class = "speaker">
-<tr>
-<td><div class="crop"><img src="{% static 'img/kalam.jpg' %}"></div><br><h4><span class = "colortitle">APJ Abdul Kalam</span></h4><br>Former President of India</td>
-<td><div class="crop"><img src="{% static 'img/lewin.png' %}"></div><br><h4><span class = "colortitle">Walter Lewin</span></h4><br>MIT Professor of Physics</td>
-<td><div class="cropv"><img src="{% static 'img/pastis.jpg' %}"></div><br><h4><span class = "colortitle">Stephan Pastis</span></h4><br>Cartoonist</td>
-</tr>
-<tr>
-<td><div class="crop"><img src="{% static 'img/ian.jpg' %}"></div><br><h4><span class = "colortitle">Ser Barristan Selmy</span></h4><br>Game of Thrones Actor</td>
-<td><div class="cropv"><img src="{% static 'img/aditi.jpg' %}"></div><br><h4><span class = "colortitle">Aditi Rao Hydari</span></h4><br>Actress, Bollywood</td>
-<td><div class="crop"><img src="{% static 'img/sardesai.jpg' %}"></div><br><h4><span class = "colortitle">Rajdeep Sardesai</span></h4><br>Journalist</td>
-</tr></table>
-<br><br>
-<h4 class="titlehead colortitle">Telepresence</h4>
-<br><br>
-<table class="speaker">
-<tr>
-<td><div class="crop"><img src="{% static 'img/brendan.jpg' %}"></div><br><h4><span class = "colortitle">Brendan Eich</span></h4><br>Creator of JavaScript</td>
-<td><div class="crop"><img src="{% static 'img/smith.jpg' %}"></div><br><h4><span class = "colortitle">Christopher Smith</span></h4><br>Former Director-General, CERN</td>
-<td><div class="crop"><img src="{% static 'img/rees.jpg' %}"></div><br><h4><span class = "colortitle">Lord Martin Rees</span></h4><br>Former President, Royal Society</td>
-</tr>
-<tr>
-<td><div class="crop"><img src="{% static 'img/trip.jpg' %}"></div><br><h4><span class = "colortitle">Trip Adler</span></h4><br>Founder, Scribd</td>
-<td><div class="crop"><img src="{% static 'img/mather.gif' %}"></div><br><h4><span class = "colortitle">John Mather</span></h4><br>Nobel Prize in Physics</td>
-<td><div class="cropv"><img src="{% static 'img/curl.jpg' %}"></div><br><h4><span class = "colortitle">Robert Curl</span></h4><br>Nobel Prize in Chemistry</td>
-</tr>
-</table>
-</div>
-
-<hr class = "hrthin">
-				<br><br>
-			<div style = "float:right; width:40%; text-align:right">
-			<i class = "fa fa-copyright"></i>&nbsp;Quark 2017
-			</div>
-			<div style = "float:left; width:40%">
-				<a target="_blank" href="https://www.facebook.com/bitsquark" style="color:rgba(255,255,255,0.6); padding-left:2em;">
-				<i class= "fa fa-2x fa-facebook-f"></i>
-				</a>
-				<a target="_blank" href = "https://www.twitter.com/bitsquark" style="color:rgba(255,255,255,0.6);padding-left:2em;">
-				<i class= "fa fa-2x fa-twitter"></i>
-				</a>
-				<a target="_blank" href = "https://www.youtube.com/channel/UC7Ptc_UtcU1XRAFS-tjq7JA" style="color:rgba(255,255,255,0.6);padding-left:2em;">
-				<i class = "fa fa-2x fa-youtube-play"></i>
-				</a>
-			</div>
-
-<style type="text/css">
-
-
-
-/*
-img{
-	vertical-align: middle;
-	max-width: 200px;
-	max-height: 200px;
-	display: -moz-inline-box;
-	display: inline-block;
-}
-*/
-	body {
-	background-image: url("{% static 'img/background.jpg' %}");
-	background-repeat:no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	font-family: 'Roboto', sans-serif;
-	color: #fff;
-	font-size: 200;
-	padding:4% 10%;
-}
-h1,.titlehead{
-	font-family: 'Raleway', sans-serif;
-	font-size: 700;
-	text-align: center;
-
-}
-.speaker
-	{	
-		padding: 5%;
-		text-align: center;
-		width: 100%;
-	}
-
-	td
-	{
-		width:30%;
-		padding: 25px;
-		border: solid 1px #aaa;
-	}
-
-	.crop
-	{
-		 width: 200px;
-    height: 150px;
-    overflow: hidden;
-    margin:0 auto;
-	}
-.crop img {
-    
-    height: 150px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-	.cropv
-	{
-		width: 200px;
-    height: 150px;
-    overflow: hidden;
-    margin:0 auto;
-	}
-	.cropv img {
-    
-    width: 200px;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.colortitle
-{
-	color: #9C0000;
-}
-
-.colorh1{
-	color: #555;
-}
-
-.hrthin{
-	width: 40%;
-	 display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-}
-i:hover{
-	color: rgba(255,255,255,1);
-	transition: color 0.5s;
-}
-.img{
-	border-radius: 50%;
-	border:3px solid #ddd;
-	width:130px;
-	height:130px;
-}
-</style>
-
+                        </div> -->
+                        <h1 class="speaker-not-released-yet">Wait for speaker release :P</h1>
+                    </div>
+                    <!-- <div class="more-info-container">
+                        <div class="row">
+                            <div class="col s8 m0">
+                                <div class="card pink darken-4">
+                                    <div class="card-content white-text">
+                                        <p>Great minds inspire us to do great things. This Quark get inspired by few of the great people of our time. Quark presents the first Guest Speaker, Joel Spolsky, CEO and Co-founder of Stack Overflow. He is also the author of five books, including 'User Interface Design for Programmers' and 'Smart and Gets Things Done'. We invite you all to come and ask out loud all your questions. Be There, Get Inspired!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- /Speaker not released yet -->
+            </div>
+        </div>
+        <!-- /THE CONTENT -->
+        <div class="pages-wrapper">
+            <hr id="lower-hr">
+        </div>
+    </div>
+    <!-- /MAIN CONTAINER -->
+    <!-- SCRIPTS -->
+    <script src="{% static 'js/jquery-3.0.0.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+    $(window).on('load', function() {
+        Materialize.toast('You can click, drag & release horizontally to navigate.', 4000);
+        setTimeout(function() {
+            Materialize.toast('But who\'d do that when you can use arrow keys, right?', 3000);
+        }, 6000);
+        setTimeout(function() {
+            Materialize.toast('Arrow keys are obviously more comfy :D', 3000);
+        }, 9000);
+        setTimeout(function() {
+            Materialize.toast('Oh okay..I better stop talking now.', 4000);
+        }, 12000);
+    });
+    </script>
+    <script src="{% static 'js/guest_lectures_script.js' "></script>
 </body>
+
 </html>
