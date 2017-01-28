@@ -89,6 +89,7 @@ PANEL_CORPORATE = (
     )
 
 WORKSHOP = (
+    (u'Spark', u'Sabre - Apache Spark'),
     (u'Deep Learning', u'NVIDIA - Deep Learning'),
     (u'Fusion 360', u'AUTODESK - Product Design using Fusion 360'),
     (u'App Development', u'MathWorks - App Development'),

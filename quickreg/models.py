@@ -34,3 +34,6 @@ class quick(models.Model):
 	panel_elect = models.CharField(max_length = 500)
 	panel_corporate = models.CharField(max_length = 500)
 	workshop = models.CharField(max_length = 500)
+
+	def __str__(self):
+		return self.name
