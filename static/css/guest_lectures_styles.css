@@ -68,55 +68,55 @@ hr {
 }
 
 .carousel-item#one {
-    background: url({% static '../img/wallpapers/wallpaper14.jpg' %}) center 15vh;
+    background: url(../img/wallpapers/wallpaper14.jpg) center 15vh;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .carousel-item#two {
-    background: url({% static '../img/wallpapers/wallpaper15.jpg' %});
+    background: url(../img/wallpapers/wallpaper15.jpg);
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .carousel-item#three {
-    background: url({% static '../img/wallpapers/wallpaper9.jpg' %}) -25vw -25vh;
+    background: url(../img/wallpapers/wallpaper9.jpg) -25vw -25vh;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .carousel-item#four {
-    background: url({% static '../img/wallpapers/wallpaper10.jpg' %});
+    background: url(../img/wallpapers/wallpaper10.jpg);
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .carousel-item#five {
-    background: url({% static '../img/wallpapers/wallpaper11.gif' %}) -47vw;
+    background: url(../img/wallpapers/wallpaper11.gif) -47vw;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .carousel-item#six {
-    background: url({% static '../img/wallpapers/wallpaper6.jpg' %}) -50vw -10vh;
+    background: url(../img/wallpapers/wallpaper6.jpg ) -50vw -10vh;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .carousel-item#seven {
-    background: url({% static '../img/wallpapers/wallpaper4.jpg' %}) -28vw;
+    background: url(../img/wallpapers/wallpaper4.jpg) -28vw;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .carousel-item#eight {
-    background: url({% static '../img/wallpapers/wallpaper12.jpeg' %}) -50vw;
+    background: url(../img/wallpapers/wallpaper12.jpeg) -50vw;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .carousel-item#nine {
-    background: url({% static '../img/wallpapers/wallpaper13.jpg' %});
+    background: url(../img/wallpapers/wallpaper13.jpg);
     -webkit-background-size: cover;
     background-size: cover;
 }
