@@ -14,7 +14,7 @@ class Sponsor(models.Model):
     types = models.CharField(max_length=100, choices=SPONS)
 
     def __str__(self):
-        return self.desc
+        return str(self.order) + ' | ' + self.desc
 
 class FoodFest(models.Model):
     order = models.IntegerField()
@@ -23,4 +23,4 @@ class FoodFest(models.Model):
     img = models.ImageField(upload_to = "adminuploads/sponsors/")
 
     def __str__(self):
-        return self.desc
+        return str(self.order) + ' | ' + self.desc
