@@ -60,7 +60,6 @@ PANEL_SPECIALS = (
     (u'Paper Presentation',u'Paper Presentation'),
     (u'Industrial Process Design',u'Industrial Process Design'),
     (u'School Bag',u'School Bag'),
-    (u'Shutter Up',u'Shutter Up'),
     )
 
 PANEL_INIT = (
